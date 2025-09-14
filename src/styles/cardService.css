@@ -1,0 +1,54 @@
+.card-service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    /* background-color: aqua; */
+}
+
+.card-services {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 40rem;
+    height: 35rem;
+    transition: all 0.3s ease;
+}
+
+.card-services h2 {
+    background-color: var(--azul-polvo);
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 50%;
+    margin: 2rem;
+}
+
+.card-services h2 i {
+    font-size: 4rem;
+    color: var(--gris-carbon);
+}
+
+.card-services h3 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.card-services p {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    text-align: justify;
+    color: var(--gris-carbon);
+}
+
+
+.card-services:hover {
+    box-shadow: 0 0 10px var(--gris-carbon);
+    transform: scale(1.05);
+}

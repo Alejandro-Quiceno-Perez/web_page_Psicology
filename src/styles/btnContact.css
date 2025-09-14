@@ -1,0 +1,18 @@
+.btn-contact {
+    background-color: var(--azul-confianza);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.btn-contact a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
+.btn-contact:hover {
+    background-color: var(--gris-carbon);
+    box-shadow: 0 0 10px var(--gris-carbon);
+}

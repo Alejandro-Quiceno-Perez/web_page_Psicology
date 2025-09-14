@@ -1,0 +1,78 @@
+.container-header {
+    width: 100%;
+    height: 140px;
+    background-color: var(--azul-muy-claro);
+    border-bottom: 1px solid var(--azul-polvo);
+}
+
+
+.header-content {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgba(0, 0, 255, 0.301); */
+}
+
+
+/*  * contenedor de logo */
+
+.container-logo {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: yellowgreen; */
+    gap: 1rem;
+}
+
+.img-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.title-logo {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--gris-carbon);
+
+}
+
+
+/* * contenedor de navegación */
+
+.container-nav {
+    /* background-color: violet; */
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.container-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.container-nav ul li {
+    list-style: none;
+}
+
+.container-nav ul li a {
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--azul-confianza);
+    transition: all 0.2s ease-in-out;
+}
+
+.container-nav ul li a:hover {
+    color: var(--gris-carbon);
+    text-shadow: 0 0 1px var(--azul-confianza);
+}

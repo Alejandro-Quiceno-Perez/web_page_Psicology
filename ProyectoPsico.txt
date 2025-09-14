@@ -1,0 +1,78 @@
+Pagina web informativa
+
+- Que tenga botones de contacto como Wpp, Ig, Email 
+
+- Hacer foco en botones para pedir servicio y contacto. 
+
+TAREAS: 
+1. Tener el logo Vectorizado 
+2. Nombre de la pagina
+3. Hacer la informacion de la pagina 
+{ 
+
+Quienes somos, Que hacemos, Familia, 
+
+
+
+Fuentes: Poppins Titulos
+Open Sans Textos... 
+
+
+
+
+Paginas de referencia 
+https://clinicapsicologicadeantioquia.com/
+
+Esta nos encanto - https://es.wix.com/website-template/view/html/2533?originUrl=https%3A%2F%2Fes.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fblog%2Fsports-wellness%3FdashboardFirstMetaSiteId%3Db17fe59b-800d-4d3d-a988-e03df0fc6f7f&tpClick=view_button&esi=e10b0e7b-53b3-488d-b59a-717da8928cc0&dashboardFirstMetaSiteId=b17fe59b-800d-4d3d-a988-e03df0fc6f7f
+
+ESta tambien nos gusto - https://zentaibienestar.com/?gad_source=1&gbraid=0AAAAA_VFI-_o1HPqLW-LmGF4w8OZ73eH3&gclid=Cj0KCQjw2ZfABhDBARIsAHFTxGxwpGERgriHuJzH8tkYR0ykJE4CBGSoOl66MITUC8TlzfdEPUp2_cUaAtKLEALw_wcB#home
+
+
+
+
+Paleta de colores 
+ 3. Paleta moderna y limpia (minimalista, ideal para apps o contenido joven)
+Azul eléctrico (#3A7CA5) – botones y enlaces.
+
+Blanco (#FFFFFF) – fondo principal.
+
+Azul pastel (#E1ECF7) – fondos secundarios.
+
+Gris oscuro (#4A4A4A) – texto fuerte.
+
+Celeste (#B3DAF1) – detalles interactivos.
+
+-------------------------------------------------------------
+
+4. Paleta cálida y emocional (para trabajar temas como emociones, bienestar)
+Azul claro (#A7C7E7) – base.
+
+Blanco (#FFFFFF) – fondo.
+
+Durazno suave (#ffe5b4) – para generar calidez.
+
+Beige claro (#FDF6EC) – fondo de tarjetas o secciones.
+
+Gris cálido (#8C8C8C) – texto o bordes sutiles.
+
+verde menta (#e0faed) - logo o slogan
+
+verde mas oscuro (#3d5f4e) - Logo o slogan opcional
+
+
+
+
+
+
+<script type="module">
+    import { CreateHilosWhatsappButton } from "https://button.hilos.io/whatsapp-button.esm.js";
+    CreateHilosWhatsappButton({
+      phone: "+573043317903",
+      message: "Hola!
+Quiero más información sobre las sesiones...",
+      color: "#ffffff",
+      background: "#72d66e",
+      position: "right",
+      padding: "20"
+    });
+  </script>
