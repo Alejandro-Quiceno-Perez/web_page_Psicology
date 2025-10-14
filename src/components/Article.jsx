@@ -4,6 +4,7 @@ import '../styles/article.css'; // Asegúrate de crear este archivo CSS para est
 import Services from '../utils/Services';
 import AboutMe from '../utils/AboutMe';
 import Equipo from '../utils/Equipo';
+import Testimonios from './Testimonios';
 
 const Article = () => {
     return (
@@ -18,6 +19,7 @@ const Article = () => {
             <section id="equipo">
                 <Equipo />
             </section>
+            {/* <Testimonios /> */}
         </div>
     )
 }

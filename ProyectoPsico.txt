@@ -76,3 +76,27 @@ Quiero más información sobre las sesiones...",
       padding: "20"
     });
   </script>
+
+
+
+
+** Quienes Somos ** 
+Somos un espacio de bienestar creado para acompañarte en tus procesos personales, de pareja, familiares y organizacionales.
+Un lugar donde la escucha, la empatía y la presencia consciente se encuentran con la ciencia y la experiencia profesional.
+
+Nuestro equipo está conformado por psicólogos clínicos, psicólogos organizacionales y trabajadores sociales que comparten un mismo propósito: cuidar la mente, las emociones y las relaciones desde un enfoque humano, ético y basado en evidencia.
+
+Creemos que el bienestar no es solo la ausencia de dolor, sino la posibilidad de vivir con sentido, equilibrio y resiliencia.
+Por eso, integramos prácticas terapéuticas con herramientas de mindfulness y una mirada de vida consciente, reconociendo la diversidad y honrando la singularidad de cada historia.
+
+Nuestra labor está guiada por tres pilares esenciales: confidencialidad, integridad y calidad del cuidado.
+
+
+** Que hacemos ** 
+Acompañamos a personas, parejas, familias y empresas que buscan fortalecer su bienestar emocional y humano.
+Nuestra misión es promover una salud mental integral y un desarrollo personal y relacional auténtico, desde una perspectiva compasiva, consciente y ética.
+
+Combinamos la experiencia clínica, la investigación basada en evidencia y las prácticas de mindfulness para guiar cada proceso de forma respetuosa, profunda y transformadora.
+
+Creemos que el bienestar se construye día a día, a través de pequeñas decisiones conscientes, de la apertura a sentir y de la valentía de mirar hacia adentro.
+Nos inspira acompañarte en ese camino hacia una vida más plena, más presente y más tú.

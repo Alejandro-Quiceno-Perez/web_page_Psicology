@@ -1,8 +1,11 @@
 const EquipoData = [
+
+//     Psicóloga
+// Especialista en Neuropsicologia Infantil
     {
         id: 1,
         nombre: "Dra. Cristina Henao",
-        rol: "Psicóloga Clínica - Fundadora",
+        rol: "Especialista en Neuropsicologia Infantil",
         img: "./img/person.jpg",
         shortDescription: "Psicóloga clínica con más de cinco años de experiencia en procesos de duelo, trabajo con niños, jóvenes y adultos. Ofrece sesiones presenciales en Medellín y virtuales en cualquier lugar del mundo.",
         moreDescription:
