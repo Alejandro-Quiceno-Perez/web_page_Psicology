@@ -15,6 +15,7 @@ html {
 
 body {
   background-color: var(--beige-claro);
+  text-align: justify;
 }
 
 :root {
