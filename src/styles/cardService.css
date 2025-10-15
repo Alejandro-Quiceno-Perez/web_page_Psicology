@@ -36,11 +36,13 @@
 }
 
 .card-services h3 {
+    font-family: var(--font-title);
     font-size: 3rem;
     margin: 1rem 0;
 }
 
 .card-services p {
+    font-family: var(--font-body);
     margin: 1rem 0;
     font-size: 1.5rem;
     text-align: justify;

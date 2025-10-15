@@ -14,6 +14,7 @@
 }
 
 .footer h2 {
+    font-family: var(--font-title);
     font-size: 4rem;
     font-weight: bold;
     color: var(--gris-carbon);

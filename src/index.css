@@ -18,6 +18,16 @@ body {
   text-align: justify;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--azul-polvo);
+  border-radius: 0px;
+}
+
+
 :root {
   --negro:#000;
   --blanco: #ffffff;
@@ -25,5 +35,7 @@ body {
   --azul-polvo: #b8d4e3;
   --azul-confianza: #4a90a4;
   --gris-carbon: #2c3e50;
+  --font-title: "Lora", serif;
+  --font-body: "Jost", sans-serif;
 }
 

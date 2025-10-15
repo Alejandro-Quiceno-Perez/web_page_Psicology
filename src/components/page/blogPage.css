@@ -49,10 +49,12 @@
 .container-articulos {
     /* background-color: yellow; */
     width: 70%;
-    margin: 0 auto;
+    margin: 1rem auto;
+    padding-top: 5rem;
 }
 
 .titulo-articulos {
+    font-family: var(--font-title);
     text-align: center;
     font-size: 4rem;
     margin-top: 4rem;
@@ -97,6 +99,7 @@
 }
 
 .card-info h3 {
+    font-family: var(--font-title);
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
