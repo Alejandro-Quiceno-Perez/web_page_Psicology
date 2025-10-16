@@ -33,13 +33,13 @@
     padding: 2rem 1.5rem;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.2s ease;
     cursor: pointer;
 }
 
 .card-equipo:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.541); */
 }
 
 .equipo-img-wrapper {

@@ -2,13 +2,13 @@
 
 .container-header {
     width: 100%;
-    height: 80px;
+    height: 8rem;
     background-color: var(--azul-muy-claro);
     border-bottom: 1px solid var(--azul-polvo);
     position: fixed;
     top:0;
     left:0;
-    z-index: 100;
+    z-index: 999;
 }
 
 
