@@ -8,18 +8,27 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50); // Cambia cuando se baja más de 50px
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <header className="container-header">
+    <header className={`container-header ${scrolled ? "scrolled" : ""}`}>
       <div className="header-content">
         <LogoImage />
-        <NavTabs />
+
+        {/* Botón Hamburguesa */}
+        <div
+          className={`menu-toggle ${isOpen ? "open" : ""}`}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <NavTabs isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
     </header>
   );
