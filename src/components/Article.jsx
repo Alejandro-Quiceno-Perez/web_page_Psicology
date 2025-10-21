@@ -14,7 +14,7 @@ const Article = () => {
             <section id="servicios">
                 <Services />
             </section>
-            <section id="nosotros">
+            <section className='nosotros' id="nosotros">
                 <AboutMe />
             </section>
             <section id="equipo">

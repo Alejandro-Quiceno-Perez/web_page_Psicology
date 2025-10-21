@@ -1,14 +1,18 @@
 import React from 'react'
 import BtnContact from './BtnContact'
 
-const NavTabs = ({ isOpen, setIsOpen }) => {
+const NavTabs = ({ navItems = []}) => {
     return (
-        <nav className={`container-nav ${isOpen ? "active" : ""}`}>
+        <nav className={`container-nav`}>
             <ul>
-                <li><a href="" onClick={() => setIsOpen(false)}>Home</a></li>
-                <li><a href="#servicios" onClick={() => setIsOpen(false)}>Servicios</a></li>
-                <li><a href="#nosotros" onClick={() => setIsOpen(false)}>Nosotros</a></li>
-                <li><a href="#contacto" onClick={() => setIsOpen(false)}>Contacto</a></li>
+                {
+                    navItems.map((item) => (
+                        <li key={item.href}>
+                            <a href={item.href}>{item.label}</a>
+                        </li>
+                    ))
+                }
+                
             </ul>
         </nav>
     );

@@ -3,8 +3,7 @@ import "../styles/header.css"; // Asegúrate de crear este archivo CSS para esti
 import LogoImage from "../utils/LogoImage";
 import NavTabs from "../utils/NavTabs";
 
-export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+export default function Header({showNav = true, navItems}) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -13,23 +12,17 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  
+
   return (
     <header className={`container-header ${scrolled ? "scrolled" : ""}`}>
       <div className="header-content">
         <LogoImage />
-
-        {/* Botón Hamburguesa */}
-        <div
-          className={`menu-toggle ${isOpen ? "open" : ""}`}
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-        <NavTabs isOpen={isOpen} setIsOpen={setIsOpen} />
+        {
+          showNav && <NavTabs navItems={navItems} />
+        }
       </div>
+
     </header>
   );
 }

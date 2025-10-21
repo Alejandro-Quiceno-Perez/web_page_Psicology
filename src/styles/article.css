@@ -82,7 +82,7 @@
 .container-services {
     width: 100%;
     height: 100%;
-    padding: 8rem 0;
+    padding: 6rem 0;
     background-color: var(--azul-polvo);
 }
 
@@ -113,11 +113,16 @@
 
 /* ! Section About Me */
 
+.nosotros {
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
 .container-about-me {
     /* background-color: aqua; */
     width: 70%;
     height: 65vh;
-    margin: 10rem auto;
+    margin: 5rem auto;
     display: flex;
     align-items: center;
     justify-content: center;

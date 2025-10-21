@@ -8,13 +8,13 @@
 .container-cards {
     /* background-color: aqua; */
     width: 70%;
-    height: 500px;
+    height: 100%;
     margin: 0 auto;
-    gap: 2rem;
+    padding: 10rem 0;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10rem;
 }
 
 .container-equipo h2 {

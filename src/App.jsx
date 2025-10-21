@@ -11,6 +11,17 @@ import BlogPage from './components/page/BlogPage';
 
 function App() {
 
+  const mainNavItems = [
+    { label: 'Home', href: '/' },
+    { label: 'Servicios', href: '#servicios' },
+    { label: 'Nosotros', href: '#nosotros' },
+    { label: 'Contacto', href: '#contacto' },
+  ];
+
+  const blogNavItems = [
+    { label: 'Home', href: '/' },
+    { label: 'Contacto', href: '#contacto' },
+  ];
 
   return (
     <Router>
@@ -18,13 +29,13 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-              <Header />
+              <Header showNav={true} navItems={mainNavItems} />
               <Article />
             </>
           } />
           <Route path="/blogPage" element={
             <>
-              <Header />
+              <Header showNav={true} navItems={blogNavItems} />
               <BlogPage />
             </>
           } />

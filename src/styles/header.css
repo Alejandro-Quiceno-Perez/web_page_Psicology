@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-/*
+
 .container-header {
     width: 100%;
     height: 8rem;
     background-color: var(--azul-muy-claro);
     border-bottom: 1px solid var(--azul-polvo);
-    position: fixed;
-    top:0;
-    left:0;
-    z-index: 999;
 }
 
 
@@ -25,7 +21,7 @@
 
 /*  * contenedor de logo */
 
-/* .container-logo {
+.container-logo {
     width: 40%;
     height: 100%;
     display: flex;
@@ -45,12 +41,12 @@
     font-weight: bold;
     color: var(--gris-carbon);
 
-} */
+} 
 
 
 /* * contenedor de navegación */
 
-/* .container-nav {
+.container-nav {
     width: 60%;
     height: 100%;
     display: flex;
@@ -82,170 +78,6 @@
 .container-nav ul li a:hover {
     color: var(--gris-carbon);
     text-shadow: 0 0 1px var(--azul-confianza);
-} */
+} 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
-
-.container-header {
-    width: 100%;
-    height: 8rem;
-    background-color: var(--azul-muy-claro);
-    border-bottom: 1px solid var(--azul-polvo);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.container-header.scrolled {
-    background-color: var(--azul-claro);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.header-content {
-    width: 70%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* LOGO */
-.container-logo {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.img-logo {
-    width: 90px;
-    height: auto;
-}
-
-.title-logo {
-    font-family: "Lora", serif;
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--gris-carbon);
-}
-
-/* NAVIGATION */
-.container-nav {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
-
-.container-nav ul {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-
-.container-nav ul li {
-    list-style: none;
-}
-
-.container-nav ul li a {
-    text-decoration: none;
-    font-family: "Lora", serif;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    color: var(--azul-confianza);
-    transition: color 0.2s ease-in-out;
-}
-
-.container-nav ul li a:hover {
-    color: var(--gris-carbon);
-}
-
-/* MENU HAMBURGUESA */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    cursor: pointer;
-    width: 2.5rem;
-    height: 2rem;
-}
-
-.menu-toggle span {
-    height: 3px;
-    width: 100%;
-    background: var(--gris-carbon);
-    margin-bottom: 5px;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-}
-
-.menu-toggle.open span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.menu-toggle.open span:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-toggle.open span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
-
-/* ======= CELULARES ======= */
-@media (max-width: 767px) {
-    .header-content {
-        width: 90%;
-    }
-
-    .title-logo {
-        font-size: 2.4rem;
-    }
-
-    .container-nav {
-        position: absolute;
-        top: 8rem;
-        left: 0;
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-        background-color: var(--azul-muy-claro);
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: height 0.3s ease-in-out;
-    }
-
-    .container-nav.active {
-        height: 100vh;
-    }
-
-    .container-nav ul {
-        flex-direction: column;
-        gap: 3rem;
-    }
-
-    .container-nav ul li a {
-        font-size: 2.2rem;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-}
-
-/* ======= TABLETS ======= */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .header-content {
-        width: 85%;
-    }
-
-    .title-logo {
-        font-size: 2.8rem;
-    }
-
-    .container-nav ul li a {
-        font-size: 1.6rem;
-    }
-}
