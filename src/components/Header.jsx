@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "../styles/header.css"; // Asegúrate de crear este archivo CSS para estilos adicionales
+import "../styles/stylesResponsive/responsiveHeader.css"
 import LogoImage from "../utils/LogoImage";
 import NavTabs from "../utils/NavTabs";
 

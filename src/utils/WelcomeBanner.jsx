@@ -17,7 +17,7 @@ const WelcomeBanner = () => {
             </section>
             <section className="container-img">
                 <div className="container__img">
-                    <img src="./img/Logo_sinFondo.png" alt="Imagen de fondo lugar" />
+                    <img src="/img/Logo_sinFondo.png" alt="Imagen de fondo lugar" />
                 </div>
             </section>
         </div>
