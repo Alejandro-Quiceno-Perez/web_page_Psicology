@@ -49,6 +49,7 @@
 
 .btn-verMas a {
     text-decoration: none;
+    font-family: var(--font-title);
     color: var(--azul-confianza);
     font-size: 2rem;
 }

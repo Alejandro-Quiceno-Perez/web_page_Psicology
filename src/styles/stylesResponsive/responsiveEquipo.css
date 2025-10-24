@@ -1,0 +1,42 @@
+@media (max-width: 1444px) {
+
+    .container-equipo h2 {
+        font-size: 3rem;
+    }
+
+    .container-cards {
+        /* background-color: aqua; */
+        width: 90%;
+        gap: 5rem;
+        padding: 8rem 0;
+    }
+
+    .container-equipo h2 {
+        font-size: 3rem;
+        padding-top: 3rem;
+    }
+
+    .card-equipo {
+        /* background-color: wheat; */
+        width: 24%;
+        height: 100%;
+    }
+
+    .equipo-img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .equipo-nombre {
+        font-size: var(--font-size-medium);
+    }
+
+    .equipo-rol {
+        font-size: 1.2rem;
+    }
+
+    .short-description{
+        font-size: var(--font-size-small);
+        margin-top: 0.5rem;
+    }
+}

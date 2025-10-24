@@ -1,0 +1,98 @@
+/* --- PC Portatil --- */
+@media(max-width: 1444px) {
+
+    /*** WELCOME BANNER ***/
+
+    .container-info {
+        /* background-color: aquamarine; */
+        margin: 5rem auto;
+        width: 90%;
+        height: 100%;
+        gap: 5rem;
+    }
+
+    .container-title h1 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .container-title p {
+        font-size: 1.5rem;
+    }
+
+    .btn-contact a {
+        font-size: 1.5rem;
+    }
+
+
+    .btn-verMas a {
+        font-size: 1.5rem;
+    }
+
+
+    /*! **SECTION SERVICES** !*/
+    .container-services {
+        padding: 5rem 0;
+    }
+
+    .container-info-services {
+        width: 90%;
+    }
+
+    .container-info-services h2 {
+        font-size: 3rem;
+    }
+
+    .container-info-services p {
+        font-size: 1.5rem;
+    }
+
+
+    /*! **SECTION ABOUT ME** !*/
+
+    .nosotros {
+        /* background-color: aqua; */
+        padding: 0;
+    }
+
+    .container-about-me {
+        /* background-color: antiquewhite; */
+        width: 90%;
+        height: 100%;
+        margin: 1rem auto;
+        gap: 5rem;
+        padding: 0;
+    }
+
+    .about-me-img {
+        width: 40%;
+        height: 100%;
+    }
+
+    .about-me-info {
+        width: 60%;
+    }
+
+    .about-me-info h2 {
+        font-size: 3rem;
+    }
+
+    .about-me-info p {
+        font-size: 1.5rem;
+    }
+
+    .btn-about-me {
+        width: 43%;
+    }
+}
+
+    /* 📱 --- Tablets o  pc pequeño --- */
+    @media (max-width: 1024px) {}
+
+    @media (max-width: 768px) {}
+
+    @media (max-width: 600px) {}
+
+    /* 📱 --- Móviles pequeños --- */
+
+    @media (max-width: 400px) {}

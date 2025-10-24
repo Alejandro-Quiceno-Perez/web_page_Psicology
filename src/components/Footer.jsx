@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/footer.css'
+import '../styles/stylesResponsive/responsiveFooter.css'
 import BtnContact from '../utils/BtnContact'
 
 const Footer = () => {

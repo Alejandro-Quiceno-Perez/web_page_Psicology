@@ -42,11 +42,13 @@
 }
 
 .card-services p {
+    /* background-color: azure; */
     font-family: var(--font-body);
     margin: 1rem 0;
     font-size: 1.5rem;
     text-align: justify;
     color: var(--gris-carbon);
+    padding: 0;
 }
 
 

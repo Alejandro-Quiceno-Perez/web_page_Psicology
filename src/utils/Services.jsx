@@ -1,6 +1,6 @@
 import React from 'react'
 import CardService from './CardService'
-
+import '../styles/stylesResponsive/responsiveServices.css'
 const Services = () => {
     return (
         <div className='container-services'>

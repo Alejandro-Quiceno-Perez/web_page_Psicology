@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/equipo.css";
+import "../styles/stylesResponsive/responsiveEquipo.css";
 import EquipoData from "../assets/db/DataEquipo";
 
 const Equipo = () => {
