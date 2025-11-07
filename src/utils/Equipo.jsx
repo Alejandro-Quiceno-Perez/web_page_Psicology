@@ -23,11 +23,6 @@ const Equipo = () => {
                         <div className="equipo-img-wrapper">
                             <img src={persona.img} alt={persona.nombre} className="equipo-img" />
                         </div>
-                        <div className="equipo-info">
-                            <h3 className="equipo-nombre">{persona.nombre}</h3>
-                            <p className="equipo-rol">{persona.rol}</p>
-                            <p className="short-description">{persona.shortDescription}</p>
-                        </div>
                     </div>
                 ))}
             </div>
@@ -41,8 +36,10 @@ const Equipo = () => {
                         <span className="close" onClick={handleCloseModal}>
                             &times;
                         </span>
-                        <img className="modal-img" src={EquipoData[openModalIndex].img} alt={EquipoData[openModalIndex].nombre} />
-                        <h2 className="modal-title">{EquipoData[openModalIndex].nombre}</h2>
+                        <div className="modal-header">
+                            <img className="modal-img" src={EquipoData[openModalIndex].img} alt={EquipoData[openModalIndex].nombre} />
+                            <h3 className="modal-title">{EquipoData[openModalIndex].nombre}</h3>
+                        </div>
                         <p className="modal-rol"> {EquipoData[openModalIndex].rol}</p>
                         <p className="modal-description">{EquipoData[openModalIndex].moreDescription}</p>
                     </div>

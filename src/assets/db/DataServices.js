@@ -18,7 +18,7 @@ Te ofrecemos herramientas prácticas para expresarte con claridad, escuchar acti
         title: "Terapia de Pareja",
         description: `Intervenciones para fortalecer la dinámica familiar y resolver problemas.
 Estrategias enfocadas en generar un ambiente más sano en el hogar, promoviendo la unión, el respeto y la resolución constructiva de dificultades.`,
-        image: "bi-house-check"
+        image: "bi-people-fill"
     },
     {
         id: 4,
@@ -32,8 +32,9 @@ Estrategias enfocadas en generar un ambiente más sano en el hogar, promoviendo 
         title: "Apoyo a Empresas",
         description: `Intervenciones para fortalecer la dinámica familiar y resolver problemas.
 Estrategias enfocadas en generar un ambiente más sano en el hogar, promoviendo la unión, el respeto y la resolución constructiva de dificultades.`,
-        image: "bi-house-check"
+        image: "bi-stars"
     }
 ];
 
 export default Services;
+

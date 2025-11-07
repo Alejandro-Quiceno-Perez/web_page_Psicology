@@ -5,6 +5,12 @@
     text-align: center;
 }
 
+.container-equipo h2 {
+    font-family: var(--font-title);
+    font-size: 3rem;
+    color: var(--gris-carbon);
+    padding-top: 5rem;
+}
 .container-cards {
     /* background-color: aqua; */
     width: 70%;
@@ -17,22 +23,10 @@
     gap: 10rem;
 }
 
-.container-equipo h2 {
-    font-family: var(--font-title);
-    font-size: 4rem;
-    color: var(--gris-carbon);
-    text-align: center;
-    padding-top: 3rem;
-}
-
 .card-equipo {
-    background-color: var(--blanco);
-    width: 22%;
-    height: 100%;
-    border-radius: 16px;
-    padding: 2rem 1.5rem;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    /* background-color: var(--blanco); */
+    /* border-radius: 16px;
+    padding: 2rem 1.5rem; */
     transition: transform 0.2s ease;
     cursor: pointer;
 }
@@ -45,126 +39,144 @@
 .equipo-img-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: -70px;
+    /* margin-top: -70px; */
 }
 
 .equipo-img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin: 0 auto 1rem;
-    border: 4px solid var(--blanco);
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.74);
 }
 
-.equipo-info {
-    margin-top: 1rem;
-}
+/* -- Modal Styles -- */
 
-.equipo-nombre {
-    font-family: var(--font-title);
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    color: var(--negro);
-}
+/* ----------------------------- */
+/* 🔹 MODAL MEJORADO VISUALMENTE */
+/* ----------------------------- */
 
-.equipo-rol {
-    font-size: 1.4rem;
-    color: var(--gris-carbon);
-    font-weight: bold;
-}
-
-.short-description {
-    font-size: 1.3rem;
-    color: var(--gris-carbon);
-    text-align: justify;
-    margin-top: 1rem;
-}
-
-/* Modal */
 .modal {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.856);
+    background: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 999;
+    backdrop-filter: blur(4px);
     animation: fadeIn 0.3s ease;
 }
 
+/* Contenedor del modal */
 .modal-content {
     background: var(--blanco);
-    border-radius: 1rem;
-    padding: 2rem;
-    max-width: 400px;
-    width: 100%;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 1.5rem;
+    padding: 2.5rem 2rem;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
     position: relative;
     text-align: center;
     animation: scaleIn 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Cabecera */
+.modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Imagen del especialista */
+.modal-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border: 3px solid var(--azul-confianza);
+}
+
+/* Nombre */
+.modal-title {
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    color: var(--gris-carbon);
+    margin-bottom: 0.5rem;
+}
+
+/* Rol o especialidad */
+.modal-rol {
+    font-size: 1.2rem;
+    color: var(--azul-confianza);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Cuerpo del texto */
+.modal-description {
+    font-family: var(--font-body);
+    font-size: var(--font-size-medium);
+    color: var(--gris-carbon);
+    line-height: 1.6;
+    text-align: justify;
+    padding: 0 1rem;
+    max-height: 400px;
+    overflow-y: auto;
+    border-left: 3px solid var(--azul-confianza);
+}
+
+/* Botón cerrar */
 .close {
     position: absolute;
     top: 1rem;
     right: 1rem;
     font-size: 2rem;
-    color: #3A7CA5;
+    color: var(--azul-confianza);
     cursor: pointer;
-    font-weight: bold;
+    transition: all 0.2s ease;
 }
 
-.modal-img {
-    width: 50%;
-    height: 100%;
-    border-radius: 10%;
-    object-fit: cover;
-
-}
-
-.modal-title {
-    font-size: 3rem !important;
-    color: var(--negro) !important;
-    padding: 1rem;
-}
-
-.modal-rol {
-    font-size: 1.6rem !important;
+.close:hover {
     color: var(--gris-carbon);
-    font-weight: bold;
-    padding: 1rem;
+    transform: scale(1.1);
 }
 
-.modal-description {
-    font-size: 1.5rem !important;
-    color: var(--gris-carbon);
-    padding: 1rem;
-    text-align: justify;
+/* Scroll */
+.modal-description::-webkit-scrollbar {
+    width: 4px;
+}
+.modal-description::-webkit-scrollbar-thumb {
+    background: var(--azul-confianza);
+    border-radius: 4px;
 }
 
 /* Animaciones */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
-
 @keyframes scaleIn {
-    from {
-        transform: scale(0.8);
-        opacity: 0;
-    }
-
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
 }
 
+/* 📱 Responsive */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        padding: 2rem 1.5rem;
+    }
+
+    .modal-description {
+        max-height: 300px;
+    }
+}

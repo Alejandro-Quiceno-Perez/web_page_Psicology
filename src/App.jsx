@@ -20,6 +20,7 @@ function App() {
 
   const blogNavItems = [
     { label: 'Home', href: '/' },
+    { label: 'Cafesico-para-el-alma', href: '#cafesico-para-el-alma' },
     { label: 'Contacto', href: '#contacto' },
   ];
 

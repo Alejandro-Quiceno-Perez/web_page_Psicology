@@ -39,20 +39,52 @@ const ArticulosDestacados = () => {
                 OpenModalIndex !== null && (
                     <div className="modal-article">
                         <div className="modal-content-article">
-                            <div className="close-article">
-                                <span onClick={hangleCloseModal}>&times;</span>
+                            <div className="close-article" onClick={hangleCloseModal}>
+                                &times;
                             </div>
+
+                            {/* Imagen principal */}
                             <div className="modal-container-img">
-                                <img src={Articulos[OpenModalIndex].imagen} alt={Articulos[OpenModalIndex].titulo} />
+                                <img
+                                    src={Articulos[OpenModalIndex].imagen}
+                                    alt={Articulos[OpenModalIndex].titulo}
+                                />
+                                <div className="modal-img-info">
+                                    <span>{Articulos[OpenModalIndex].categoria}</span>
+                                    <span>{Articulos[OpenModalIndex].tiempo_lectura}</span>
+                                </div>
                             </div>
+
+                            {/* Contenido del artículo */}
                             <div className="modal-container-info">
                                 <h2>{Articulos[OpenModalIndex].titulo}</h2>
-                                <p>{Articulos[OpenModalIndex].descripcion_larga}</p>
+                                <p className="descripcion-larga">
+                                    {Articulos[OpenModalIndex].descripcion_larga}
+                                </p>
+
+                                {/* Información adicional */}
+                                <div className="modal-extra-info">
+                                    <p><strong>Autor:</strong> {Articulos[OpenModalIndex].autor}</p>
+                                    <p><strong>Fecha:</strong> {Articulos[OpenModalIndex].fecha}</p>
+                                    <p><strong>Fuente: </strong>
+                                        <a href={`https://${Articulos[OpenModalIndex].fuente}`} target="_blank" rel="noreferrer">
+                                            {Articulos[OpenModalIndex].fuente}
+                                        </a>
+                                    </p>
+                                </div>
+
+                                {/* Tags */}
+                                <div className="modal-tags">
+                                    {Articulos[OpenModalIndex].tags.map((tag, i) => (
+                                        <span key={i} className="tag">{tag}</span>
+                                    ))}
+                                </div>
+
+                                {/* Botón contacto */}
                                 <div className="btn-modal-article">
                                     <BtnContact />
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 )

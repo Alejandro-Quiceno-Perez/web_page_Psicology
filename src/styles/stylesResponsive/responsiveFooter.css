@@ -1,11 +1,11 @@
 @media(max-width: 1444px) {
     .footer {
-        background-color: aquamarine;
+        /* background-color: aquamarine; */
         padding: 2rem 0rem;
     }
 
     .footer-container {
-        background-color: yellow;
+        /* background-color: yellow; */
         width: 90%;
         padding:0;
     }

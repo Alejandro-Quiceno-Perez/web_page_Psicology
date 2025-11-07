@@ -1,4 +1,97 @@
 .container-aboutUs {
-    padding: 4rem 2rem;
-    background-color: var(--gris-claro);
+    /* background-color: aqua; */
+    width: 70%;
+    margin: 5rem auto;
+}
+
+.container-title-aboutUs {
+    /* background-color: turquoise; */
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.container-title-aboutUs h1 {
+    width: 50%;
+    text-align: left;
+    font-family: var(--font-title);
+    font-size: 3rem;
+    color: var(--gris-carbon);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.container-title-aboutUs h1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--azul-confianza);
+    border-radius: 2px;
+}
+
+/* Sección: Quienes Somos */
+.quienes_somos {
+    padding: 3rem 0;
+    background-color: var(--azul-claro-transparente);
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+
+
+.quienes_somos ul {
+    width: 50%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.quienes_somos span {
+    color: var(--azul-confianza);
+    font-weight: bold;
+    font-size: var(--font-size-medium);
+    margin-right: 1rem;
+}
+
+.quienes_somos p {
+    font-family: var(--font-body);
+    font-size: var(--font-size-medium);
+    line-height: 1.6;
+    color: var(--negro);
+}
+
+
+
+
+/* 🌐 Responsividad */
+@media (max-width: 900px) {
+    .container-aboutUs {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .quienes_somos{
+        width: 100%;
+        border-right: none;
+    }
+
+    .container-title-aboutUs h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .quienes_somos ul {
+        align-items: center;
+    }
 }
