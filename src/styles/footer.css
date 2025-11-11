@@ -2,20 +2,20 @@
     background-color: var(--azul-polvo);
     width: 100%;
     height: 100%;
-    padding: 1rem 1rem;
+    padding: 0rem 1rem;
     text-align: center;
 }
 
 .footer-container {
     /* background-color: yellow; */
     width: 70%;
-    padding: 5rem 0;
+    padding: 2rem 0 0.1rem 0;
     margin: 0 auto;
 }
 
 .footer h2 {
     font-family: var(--font-title);
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     color: var(--gris-carbon);
     margin-bottom: 1rem;
@@ -23,15 +23,15 @@
 
 .footer p {
     color: var(--negro);
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-medium-large);
     margin-bottom: 2rem;
     line-height: 1.5;
 }
 
 .footer-info {
     /* background-color: yellow; */
+    margin-bottom: 2rem;
     width: 100%;
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,10 +42,14 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    margin: 2rem;
+    margin: 0 2rem;
     text-decoration: none;
     transition: all 0.3s ease;
+}
+
+.footer-item p {
+    color: var(--negro);
+    font-size: var(--font-size-medium-large);
 }
 
 .footer-item:hover {
@@ -54,7 +58,24 @@
 
 .footer-item i {
     color: var(--gris-carbon);
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 
+/* Línea divisoria suave */
+.footer-divider {
+    width: 80%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+/* Créditos o derechos reservados */
+.footer-bottom {
+    /* background-color: aqua; */
+    padding-top: 2rem;
+    font-size: 1.5rem !important;
+    color: var(--gris-carbon);
+    opacity: 0.7;
+    letter-spacing: 0.5px;
+}

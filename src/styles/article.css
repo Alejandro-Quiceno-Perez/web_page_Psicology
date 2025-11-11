@@ -151,14 +151,14 @@
 
 .about-me-info h2 {
     font-family: var(--font-title);
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
     color: var(--gris-carbon);
 }
 
 .about-me-info p {
     font-family: var(--font-body);
-    font-size: 2rem;
+    font-size: var(--font-size-large);
     color: var(--azul-confianza);
 }
 

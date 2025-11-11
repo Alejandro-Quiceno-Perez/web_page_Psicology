@@ -34,9 +34,9 @@ const Footer = () => {
                     </a>
                 </div>
 
-                {/* <div className="footer-btn">
-                    <BtnContact />
-                </div> */}
+                <div className="footer-divider"></div>
+
+                <p className="footer-bottom">© 2025 Metanoia. Todos los derechos reservados.</p>
             </div>
         </footer>
     )
