@@ -53,7 +53,7 @@
 }
 
 .footer-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) !important;
 }
 
 .footer-item i {

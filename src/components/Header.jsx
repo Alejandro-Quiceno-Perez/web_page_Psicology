@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import "../styles/header.css"; // Asegúrate de crear este archivo CSS para estilos adicionales
 import "../styles/stylesResponsive/responsiveHeader.css"
 import LogoImage from "../utils/LogoImage";
@@ -16,15 +17,25 @@ export default function Header({showNav = true, navItems}) {
   
 
   return (
-    <header className={`container-header ${scrolled ? "scrolled" : ""}`}>
-      <div className="header-content">
+    <motion.header 
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className={`container-header ${scrolled ? "scrolled" : ""}`}
+    >
+      <motion.div 
+        className="header-content"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3, duration: 0.6 }}
+      >
         <LogoImage />
         {
           showNav && <NavTabs navItems={navItems} />
         }
-      </div>
+      </motion.div>
 
-    </header>
+    </motion.header>
   );
 }
 
