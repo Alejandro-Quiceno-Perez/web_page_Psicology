@@ -1,62 +1,16 @@
-.section1-blog-page {
-    background-image: url('./img/place.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    backdrop-filter: blur(5px);
-    width: 100%;
-    height: 300px;
-    margin: 3rem auto;
-}
-
-.section1-blog-page::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-.container-text {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--blanco);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    font-weight: 600;
-}
-
-.container-text h1 {
-    font-size: 6rem;
-    margin-bottom: 1rem;
-}
-
-.container-text p {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-}
-
-
 /* ! Artículos Destacados */
 .container-articulos {
     /* background-color: yellow; */
     width: 70%;
-    margin: 1rem auto;
-    padding-top: 5rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    padding-top: 0.5rem;
 }
 
 .titulo-articulos {
     font-family: var(--font-title);
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 4rem;
     color: var(--gris-carbon);
 }
@@ -67,22 +21,34 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 6.5rem;
+    gap: 3rem;
     width: 100%;
 }
 
 .card-articulo {
     background: var(--blanco);
-    width: 30%;
-    height: 100%;
+    width: 25%;
+    min-height: 480px;
+    /* 🔹 Establece un alto mínimo uniforme */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.712);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-articulo:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .card-img {
-    border-radius: 10px 10px 0 0;
     width: 100%;
-    height: 250px;
+    height: 220px;
+    /* 🔹 Tamaño uniforme de imagen */
+    border-radius: 10px 10px 0 0;
     overflow: hidden;
 }
 
@@ -93,8 +59,12 @@
 }
 
 .card-info {
+    flex-grow: 1;
     padding: 1rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
 }
 
@@ -131,6 +101,48 @@
     box-shadow: 0 0 10px var(--azul-confianza);
     transform: scale(1.1);
 }
+
+
+/* ----------------------------- */
+/* 🔹 PAGINACIÓN */
+/* ----------------------------- */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 2rem;
+}
+
+.pagination button {
+    background: none;
+    border: 1px solid var(--gris-claro);
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: var(--gris-carbon);
+}
+
+.pagination button:hover {
+    background-color: var(--azul-claro);
+    color: var(--azul-confianza);
+}
+
+.pagination button.active {
+    background-color: var(--azul-confianza);
+    color: var(--blanco);
+    border-color: var(--azul-confianza);
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
 
 /* ----------------------------- */
 /* 🔹 MODAL DE ARTÍCULO MEJORADO */
@@ -329,6 +341,214 @@
         opacity: 1;
     }
 }
+
+
+
+/* === 📘 Recomendación de Libros === */
+.seccion-libros {
+    /* background-color: aquamarine; */
+    width: 70%;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.titulo-seccion {
+    font-family: var(--font-title);
+    font-size: 3rem;
+    color: var(--gris-carbon);
+    margin-bottom: 3rem;
+}
+
+/* === INTRODUCCIÓN === */
+.intro-seccion {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: var(--gris-carbon);
+    width: 100%;
+    margin: 0 auto 4rem auto;
+    text-align: justify;
+    padding: 0 1rem;
+}
+
+.intro-seccion strong {
+    color: var(--azul-confianza);
+}
+
+.libros-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.card-libro {
+    background: var(--blanco);
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+.card-libro:hover {
+    transform: scale(1.05);
+}
+
+.card-libro img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.card-libro h3 {
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    color: var(--azul-confianza);
+}
+
+.card-libro .autor {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-libro .descripcion {
+    font-size: 1.5rem;
+    color: var(--gris-carbon);
+}
+
+/* ================================ */
+/* === 🎶 RECOMENDACIÓN MUSICAL === */
+/* ================================ */
+
+.seccion-musica {
+    width: 70%;
+    margin: 5rem auto;
+    padding-top: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+/* 🔹 Título */
+.titulo-musica {
+    font-family: var(--font-title);
+    font-size: 3rem;
+    color: var(--gris-carbon);
+    margin-bottom: 3rem;
+}
+
+/* ================================ */
+/* === 🧩 ESTRUCTURA PRINCIPAL === */
+/* ================================ */
+
+.musica-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    position: relative;
+}
+
+/* Sección izquierda: texto + imagen */
+.container-musica-section {
+    width: 45%;
+    text-align: left;
+}
+
+/* 🔸 Línea divisoria */
+.linea-divisoria {
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, var(--azul-confianza), transparent);
+}
+
+/* Sección derecha: lista de música */
+.lista-musica {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: left;
+}
+
+/* ================================ */
+/* === ✏️ CONTENIDO IZQUIERDO === */
+/* ================================ */
+
+.intro-musica {
+    font-size: var(--font-size-medium-large);
+    color: var(--gris-carbon);
+    line-height: 1.7;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+/* 🎵 Imagen representativa */
+.imagen-musica-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0 6rem 0;
+}
+
+.imagen-musica-wrapper img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    object-fit: cover;
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); */
+}
+
+/* ================================ */
+/* === 🎧 LISTA DE CANCIONES === */
+/* ================================ */
+
+.item-musica {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.item-musica:last-child {
+    border-bottom: none;
+}
+
+.item-musica h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--azul-confianza);
+    margin-bottom: 0.4rem;
+}
+
+.item-musica .artista {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--gris-carbon);
+    margin-bottom: 0.6rem;
+}
+
+.item-musica .descripcion {
+    font-size: 1.5rem;
+    color: var(--gris-carbon);
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+/* 🔗 Enlace escuchar */
+.btn-escuchar {
+    font-size: 1.5rem;
+    color: var(--azul-confianza);
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.btn-escuchar:hover {
+    color: var(--gris-carbon);
+    /* text-decoration: underline; */
+}
+
+
+
+
 
 /* Responsive */
 @media (max-width: 900px) {

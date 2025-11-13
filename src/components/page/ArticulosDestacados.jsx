@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Articulos from '../../assets/db/Articulos'
 import BtnContact from '../../utils/BtnContact'
+import { button } from 'framer-motion/client'
 
 const ArticulosDestacados = () => {
     const [OpenModalIndex, setOpenModalIndex] = useState(null);
@@ -13,6 +14,14 @@ const ArticulosDestacados = () => {
     const hangleCloseModal = () => {
         setOpenModalIndex(null);
     }
+
+    const [currentPage, setCurrentPage] = useState(1);
+    const articlesPerPage = 3;
+
+    const totalPages = Math.ceil(Articulos.length / articlesPerPage);
+    const startIndex = (currentPage - 1) * articlesPerPage;
+    const endIndex = startIndex + articlesPerPage;
+    const currentArticles = Articulos.slice(startIndex, endIndex);
 
 
     return (
@@ -28,7 +37,7 @@ const ArticulosDestacados = () => {
             </motion.h1>
             <div className="card-articulos">
                 {
-                    Articulos.map((art, index) => (
+                    currentArticles.map((art, index) => (
                         <motion.div 
                             className="card-articulo" 
                             key={index}
@@ -39,17 +48,10 @@ const ArticulosDestacados = () => {
                                 duration: 0.6, 
                                 ease: "easeOut" 
                             }}
-                            whileHover={{ 
-                                scale: 1.03,
-                                y: -8,
-                                transition: { duration: 0.3 }
-                            }}
                             viewport={{ once: true }}
                         >
                             <motion.div 
                                 className="card-img"
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3 }}
                             >
                                 <img src={art.imagen} alt={art.titulo} />
                             </motion.div>
@@ -59,9 +61,6 @@ const ArticulosDestacados = () => {
                                 <motion.div 
                                     className="btn-verMas-blog" 
                                     onClick={() => handleOpenModal(index)}
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                    transition={{ duration: 0.2 }}
                                 >
                                     <span>Leer más </span>
                                 </motion.div>
@@ -70,22 +69,36 @@ const ArticulosDestacados = () => {
                     ))
                 }
             </div>
+            <div className="pagination">
+                <button onClick={() => setCurrentPage(prev => Math.max(prev - 1,1))}
+                    disabled={currentPage === 1}> 
+                    Anterior
+                </button>
+                {[...Array(totalPages)].map((_,i) => (
+                    <button
+                        key={i}
+                        className={currentPage === i + 1 ? 'active' : ''}
+                        onClick={() => setCurrentPage(i + 1)}
+                    >
+                        {i + 1}
+                    </button>
+                ))}
+
+                <button 
+                    onClick={() => setCurrentPage (prev => Math.min(prev + 1, totalPages))}
+                    disabled={currentPage === totalPages}
+                >
+                    siguiente
+                </button>
+            </div>
             <AnimatePresence>
                 {
                     OpenModalIndex !== null && (
-                        <motion.div 
+                        <div 
                             className="modal-article"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
-                            transition={{ duration: 0.3 }}
                         >
-                            <motion.div 
+                            <div 
                                 className="modal-content-article"
-                                initial={{ opacity: 0, scale: 0.8, y: 50 }}
-                                animate={{ opacity: 1, scale: 1, y: 0 }}
-                                exit={{ opacity: 0, scale: 0.8, y: 50 }}
-                                transition={{ duration: 0.4, ease: "easeOut" }}
                             >
                                 <div className="close-article" onClick={hangleCloseModal}>
                                     &times;
@@ -133,8 +146,8 @@ const ArticulosDestacados = () => {
                                         <BtnContact />
                                     </div>
                                 </div>
-                            </motion.div>
-                        </motion.div>
+                            </div>
+                        </div>
                     )
                 }
             </AnimatePresence>

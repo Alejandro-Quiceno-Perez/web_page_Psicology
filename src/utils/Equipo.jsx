@@ -22,6 +22,7 @@ const Equipo = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: true }}
+
             >
                 Conoce a nuestro equipo
             </motion.h2>
@@ -32,11 +33,12 @@ const Equipo = () => {
                         key={index}
                         initial={{ opacity: 0, scale: 0.9, y: 20 }}
                         whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                        transition={{ 
-                            delay: index * 0.2, 
-                            duration: 0.6, 
-                            ease: "easeOut" 
+                        transition={{
+                            delay: index * 0.2,
+                            duration: 0.6,
+                            ease: "easeOut"
                         }}
+                        viewport={{ once: true }}
                         onClick={() => handleOpenModal(index)}
                     >
                         <div className="equipo-img-wrapper">
