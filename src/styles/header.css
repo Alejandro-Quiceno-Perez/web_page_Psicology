@@ -3,7 +3,7 @@
 .container-header {
     width: 100%;
     height: 8rem;
-    background-color: var(--azul-muy-claro);
+    background-color: var(--azul-polvo);
     border-bottom: 1px solid var(--azul-polvo);
 }
 

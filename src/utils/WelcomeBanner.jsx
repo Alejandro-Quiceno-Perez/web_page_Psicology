@@ -93,7 +93,7 @@ const WelcomeBanner = () => {
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
                 >
-                    <img src="/img/Logo_sinFondo.png" alt="Imagen de fondo lugar" />
+                    <img src="/img/Logo_sinFondo_cafe1png.png" alt="Imagen de fondo lugar" />
                 </motion.div>
             </motion.section>
         </motion.div>
