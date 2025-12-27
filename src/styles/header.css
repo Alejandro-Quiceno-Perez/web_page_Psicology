@@ -72,7 +72,7 @@
     font-size: 2rem;
     text-transform: uppercase;
     color: var(--azul-confianza);
-    transition: all 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
 }
 
 .container-nav ul li a:hover {

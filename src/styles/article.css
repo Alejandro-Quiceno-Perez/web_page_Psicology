@@ -43,12 +43,12 @@
     padding: 1rem 2rem;
     border-radius: 10px;
     text-align: center;
-    transition: all 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     border: 1px solid var(--azul-confianza);
+    text-decoration: none;
 }
 
-.btn-verMas a {
-    text-decoration: none;
+.btn-verMas span {
     font-family: var(--font-title);
     color: var(--azul-confianza);
     font-size: 2rem;

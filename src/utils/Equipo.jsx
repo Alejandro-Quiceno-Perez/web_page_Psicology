@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "../styles/equipo.css";
 import "../styles/stylesResponsive/responsiveEquipo.css";
@@ -14,6 +14,20 @@ const Equipo = () => {
     const handleCloseModal = () => {
         setOpenModalIndex(null);
     };
+
+    // Bloquear scroll del body cuando el modal está abierto
+    useEffect(() => {
+        if (openModalIndex !== null) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+        
+        // Limpiar al desmontar el componente
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [openModalIndex]);
 
     return (
         <section className="container-equipo">
@@ -50,7 +64,7 @@ const Equipo = () => {
 
             <AnimatePresence>
                 {openModalIndex !== null && (
-                    <div className="modal" onClick={handleCloseModal} >
+                    <div className="modal">
                         <div className="modal-content" onClick={(e) => e.stopPropagation()} >
                             <span className="close" onClick={handleCloseModal}>
                                 &times;

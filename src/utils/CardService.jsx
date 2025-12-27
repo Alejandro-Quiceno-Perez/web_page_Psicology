@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import '../styles/cardService.css'
+import '../styles/stylesResponsive/responsiveArticle.css'
 import Services from '../assets/db/DataServices'
 
 

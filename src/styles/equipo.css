@@ -20,14 +20,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10rem;
+    gap: 6rem;
 }
 
 .card-equipo {
     /* background-color: var(--blanco); */
     /* border-radius: 16px;
     padding: 2rem 1.5rem; */
-    transition: transform 0.2s ease;
+    will-change: transform;
     cursor: pointer;
 }
 
@@ -63,7 +63,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 999;
+    z-index: 1001;
     backdrop-filter: blur(4px);
     animation: fadeIn 0.3s ease;
 }
@@ -142,7 +142,7 @@
     font-size: 2rem;
     color: var(--azul-confianza);
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .close:hover {

@@ -4,7 +4,6 @@
     /*** WELCOME BANNER ***/
 
     .container-info {
-        /* background-color: aquamarine; */
         margin: 5rem auto;
         width: 90%;
         height: 100%;
@@ -25,30 +24,37 @@
     }
 
 
-    .btn-verMas a {
+    .btn-verMas span {
         font-size: 1.5rem;
     }
 
 
-    /*! **SECTION SERVICES** !*/
+    /* ! **SECTION SERVICES** !*/
     .container-services {
-        padding: 5rem 0;
+        /* background-color: aqua; */
+        padding: 3rem 0;
     }
 
     .container-info-services {
+
         width: 90%;
     }
 
     .container-info-services h2 {
-        font-size: 3rem;
+        font-size: var(--font-size-extra-large);
     }
 
     .container-info-services p {
-        font-size: 1.5rem;
+        font-size: var(--font-size-medium-large);
+    }
+
+    /* CARD SERVICE */
+    .card-service {
+        gap: 1rem;
     }
 
 
-    /*! **SECTION ABOUT ME** !*/
+    /* ? **SECTION ABOUT ME** !*/
 
     .nosotros {
         /* background-color: aqua; */
@@ -86,13 +92,144 @@
     }
 }
 
-    /* 📱 --- Tablets o  pc pequeño --- */
-    @media (max-width: 1024px) {}
+/* 📱 --- Tablets o  pc pequeño --- */
+@media (max-width: 1024px) {}
 
-    @media (max-width: 768px) {}
+@media (max-width: 768px) {
+    /*** WELCOME BANNER ***/
 
-    @media (max-width: 600px) {}
+    .container-info {
+        width: 100%;
+        gap: 3rem;
+    }
 
-    /* 📱 --- Móviles pequeños --- */
+    .container-title h1 {
+        font-size: var(--font-size-large);
+        margin-bottom: 1.5rem;
+    }
 
-    @media (max-width: 400px) {}
+    .container-title p {
+        font-size: var(--font-size-medium);
+    }
+
+    .btn-info-container {
+        gap: 1.5rem;
+    }
+
+    .btn-contact a {
+        font-size: var(--font-size-medium);
+        font-weight: 500;
+    }
+
+
+    .btn-verMas span {
+        font-size: var(--font-size-medium);
+        font-weight: 500;
+    }
+
+    /* ! **SECTION SERVICES** !*/
+    .container-services {
+        /* background-color: aqua; */
+        padding: 3rem 0;
+    }
+
+    .container-info-services {
+
+        width: 90%;
+    }
+
+    .container-info-services h2 {
+        font-size: var(--font-size-extra-large);
+    }
+
+    .container-info-services p {
+        font-size: var(--font-size-medium);
+    }
+
+    /* CARD SERVICE */
+
+    .card-services {
+        /* background-color: rgba(255, 0, 0, 0.829); */
+        width: 45% !important;
+        height: 100% !important;
+        transition: none !important;
+
+    }
+
+    .card-services:hover {
+        box-shadow: none !important;
+    }
+
+    /* ? **SECTION ABOUT ME** !*/
+
+    .container-about-me {
+        /* background-color: aqua; */
+        width: 90%;
+        height: 100%;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 3rem 0rem;
+    }
+
+    .about-me-img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .about-me-info {
+        padding: 2rem;
+        width: 100%;
+    }
+
+}
+
+
+/* 📱 --- Móviles pequeños --- */
+
+@media (max-width: 425px) {
+    /*** WELCOME BANNER ***/
+
+    .container-info {
+        /* background-color: aquamarine; */
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .container-title {
+        /* background-color: yellow; */
+        padding: 0rem;
+        width: 90%;
+    }
+
+    .btn-info-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .container-img {
+        width: 70%;
+        height: 100%;
+    }
+
+    /* ! **SECTION SERVICES** !*/
+
+    /* CARD SERVICE */
+
+
+    .card-services {
+        /* background-color: rgba(255, 0, 0, 0.829); */
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    /* ? **SECTION ABOUT ME** !*/
+    
+    .about-me-info {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .btn-about-me {
+        width: 100%;
+    }
+}

@@ -64,7 +64,7 @@ const WelcomeBanner = () => {
             <motion.section className="container-title" variants={itemVariant}>
                 <motion.h1 variants={itemVariant}>
                     Te acompañamos en tu camino hacia el{' '}
-                    <motion.span 
+                    <motion.span
                         variants={spanVariant}
                         className="highlight-text"
                     >
@@ -74,24 +74,22 @@ const WelcomeBanner = () => {
                 <motion.p variants={itemVariant}>
                     Un espacio seguro y cálido donde encontrarás el apoyo profesional que necesitas. Juntos construiremos herramientas para tu crecimiento personal y emocional.
                 </motion.p>
-                <motion.div 
+                <motion.div
                     className="btn-info-container"
                     variants={itemVariant}
                 >
                     <BtnContact />
-                    <div className="btn-verMas">
-                        <a href="/blogPage">Conocer más </a>
-                    </div>
+                    <a href="/blogPage" className="btn-verMas">
+                        <span >Conocer más </span>
+                    </a>
                 </motion.div>
             </motion.section>
-            <motion.section 
-                className="container-img" 
+            <motion.section
+                className="container-img"
                 variants={imageVariant}
             >
-                <motion.div 
+                <motion.div
                     className="container__img"
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.3 }}
                 >
                     <img src="/img/Logo_sinFondo_cafe1png.png" alt="Imagen de fondo lugar" />
                 </motion.div>

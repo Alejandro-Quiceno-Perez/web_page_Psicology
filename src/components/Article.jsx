@@ -21,7 +21,6 @@ const Article = () => {
             <section id="equipo">
                 <Equipo />
             </section>
-            {/* <Testimonios /> */}
             <AboutUs />
         </div>
     )

@@ -2,6 +2,8 @@
     /* background-color: aqua; */
     width: 70%;
     margin: 5rem auto;
+    min-height: 400px;
+    overflow: hidden;
 }
 
 .container-title-aboutUs {
@@ -39,15 +41,8 @@
     display: flex;
     justify-content: center;
     gap: 3rem;
-    transition: all 0.3s ease;
+    will-change: opacity;
 }
-
-
-
-
-
-
-
 
 .quienes_somos ul {
     width: 50%;
@@ -55,6 +50,8 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    margin: 0;
+    padding: 0;
 }
 
 .quienes_somos span {
@@ -71,27 +68,3 @@
     color: var(--negro);
 }
 
-
-
-
-/* 🌐 Responsividad */
-@media (max-width: 900px) {
-    .container-aboutUs {
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .quienes_somos{
-        width: 100%;
-        border-right: none;
-    }
-
-    .container-title-aboutUs h1 {
-        font-size: 2.5rem;
-        text-align: center;
-    }
-
-    .quienes_somos ul {
-        align-items: center;
-    }
-}

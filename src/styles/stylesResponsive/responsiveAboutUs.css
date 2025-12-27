@@ -1,0 +1,37 @@
+@media (max-width: 1444px) {
+    .container-aboutUs {
+        width: 90%;
+    }
+
+
+    .container-title-aboutUs {
+        margin-bottom: 0rem;
+    }
+
+    .container-title-aboutUs h1 {
+        font-size: var(--font-size-extra-large);
+        margin-bottom: 1rem;
+    }
+
+
+}
+
+@media (max-width: 768px) {}
+
+
+@media (max-width: 480px) {
+    .view {
+        display: none;
+    }
+
+    .container-title-aboutUs h1 {
+        background-color: turquoise;
+        width: 50%;
+        font-size: var(--font-size-large);
+    }
+
+    .container-title-aboutUs h1::after {
+        width: 40px;
+        height: 3px;
+    }
+}

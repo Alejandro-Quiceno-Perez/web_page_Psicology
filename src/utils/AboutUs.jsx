@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import '../styles/aboutUs.css'
+import '../styles/stylesResponsive/responsiveAboutUs.css'
 
 const AboutUs = () => {
     const containerVariants = {
@@ -75,7 +76,7 @@ const AboutUs = () => {
                 variants={titleVariants}
             >
                 <motion.h1 variants={titleVariants}>Quienes somos</motion.h1>
-                <motion.h1 variants={titleVariants}>Qué hacemos</motion.h1>
+                <motion.h1 className='view' variants={titleVariants}>Qué hacemos</motion.h1>
             </motion.div>
             <div className="quienes_somos">
                 <motion.ul variants={leftColumnVariants}>
@@ -93,6 +94,7 @@ const AboutUs = () => {
                     </motion.li>
                 </motion.ul>
                 <motion.ul variants={rightColumnVariants}>
+                    
                     <motion.li variants={itemVariants}>
                         <p><span><i className="bi bi-arrow-right-short"></i></span>Brindar salud mental integral y desarrollo humano para individuos, familias y organizaciones, guiados por principios de compasion, conciencia y ética profesional.</p>
                     </motion.li>

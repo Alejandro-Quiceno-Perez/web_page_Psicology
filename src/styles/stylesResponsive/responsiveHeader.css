@@ -14,7 +14,7 @@
     }
 
     .title-logo {
-        font-size: 2.5rem;
+        font-size: var(--font-size-extra-large);
     }
 
     .container-nav {
@@ -57,7 +57,7 @@
     }
 
     .title-logo {
-        font-size: var(--font-size-large);
+        font-size: var(--font-size-extra-large);
     }
 
     .container-nav {
@@ -69,13 +69,14 @@
     }
 
     .container-nav ul li a {
-        font-size: 1.3rem;
+        font-size: var(--font-size-medium);
     }
 }
 
 @media (max-width: 600px) {
 
     .header-content {
+        /* background-color: aqua; */
         width: 100%;
         justify-content: center;
         /* Centra todo el contenido horizontalmente */
@@ -83,19 +84,15 @@
 
     .container-logo {
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.8rem;
     }
 
     .img-logo {
         width: 100px;
+        /* background-color: tomato; */
     }
 
     .title-logo {
-        font-size: 3rem;
-        text-align: center;
+        font-size: var(--font-size-extra-large);
     }
 
     /* Ocultamos completamente la navegación en móviles */
@@ -106,13 +103,12 @@
 
 /* 📱 --- Móviles pequeños --- */
 
-@media (max-width: 400px) {
-
+@media (max-width: 425px) {
     .img-logo {
-        width: 80px;
+        width: 90px;
     }
 
     .title-logo {
-        font-size: 2.5rem;
+        font-size: var(--font-size-extra-large);
     }
 }
