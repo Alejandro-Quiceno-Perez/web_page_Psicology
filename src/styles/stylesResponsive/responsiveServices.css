@@ -6,7 +6,7 @@
     .card-services {
         /* background-color: slategray; */
         width: 30%;
-        height: 100%;
+        height: auto;
         padding: 1rem 2rem;
     }
 

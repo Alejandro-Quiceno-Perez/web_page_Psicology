@@ -24,7 +24,7 @@ const RecomendacionLibros = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
             >
-                <strong>Leer es una forma de sanar, reflexionar y crecer.</strong> 
+                <strong>Leer es una forma de sanar, reflexionar y crecer. </strong> 
                 Los libros pueden convertirse en verdaderos compañeros de viaje: te ayudan a entender tus emociones, 
                 a mirar la vida desde nuevas perspectivas y a encontrar respuestas en momentos difíciles. 
                 En esta sección te compartimos una selección de lecturas que inspiran la calma, fortalecen la mente 

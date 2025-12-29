@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Articulos from '../../assets/db/Articulos'
 import BtnContact from '../../utils/BtnContact'
@@ -18,6 +18,19 @@ const ArticulosDestacados = () => {
      */
     const [OpenModalIndex, setOpenModalIndex] = useState(null)
 
+    // Bloquea el scroll del documento cuando el modal está abierto
+    useEffect(() => {
+        if (OpenModalIndex !== null) {
+            document.body.classList.add('modal-open')
+        } else {
+            document.body.classList.remove('modal-open')
+        }
+        return () => {
+            document.body.classList.remove('modal-open')
+        }
+    }, [OpenModalIndex])
+
+
     /**
      * Abre el modal del artículo seleccionado
      * @param {number} realIndex - índice real dentro del array Articulos
@@ -32,6 +45,8 @@ const ArticulosDestacados = () => {
     const hangleCloseModal = () => {
         setOpenModalIndex(null)
     }
+
+    
 
     /**
      * Estado y configuración de paginación

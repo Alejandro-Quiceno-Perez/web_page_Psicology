@@ -57,12 +57,21 @@ const AboutMe = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
+            style={{ willChange: "opacity" }}
         >
-            <motion.div className="about-me-img" variants={imageVariants}>
+            <motion.div 
+                className="about-me-img" 
+                variants={imageVariants}
+                style={{ willChange: "transform, opacity" }}
+            >
                 <img src="./img/person3.jpg" alt="Sobre mí" />
             </motion.div>
 
-            <motion.div className="about-me-info" variants={contentVariants}>
+            <motion.div 
+                className="about-me-info" 
+                variants={contentVariants}
+                style={{ willChange: "transform, opacity" }}
+            >
                 <motion.h2 variants={textVariants}>Cristina Henao</motion.h2>
                 <motion.p variants={textVariants}>Soy Cristina, psicóloga clínica y fundadora de Zentai, con más de cinco años de experiencia. Mi trayectoria incluye dos años en una funeraria, donde adquirí amplia experiencia en el acompañamiento en duelo. También he trabajado con niños y disfruto guiando a jóvenes y adultos en sus procesos psicológicos.
                     <br />

@@ -30,8 +30,8 @@ const AboutUs = () => {
         visible: {
             opacity: 1,
             x: 0,
-            transition: { 
-                duration: 0.8, 
+            transition: {
+                duration: 0.8,
                 ease: "easeOut",
                 when: "beforeChildren",
                 staggerChildren: 0.1
@@ -44,8 +44,8 @@ const AboutUs = () => {
         visible: {
             opacity: 1,
             x: 0,
-            transition: { 
-                duration: 0.8, 
+            transition: {
+                duration: 0.8,
                 ease: "easeOut",
                 delay: 0.2,
                 when: "beforeChildren",
@@ -64,14 +64,14 @@ const AboutUs = () => {
     }
 
     return (
-        <motion.div 
+        <motion.div
             className='container-aboutUs'
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
         >
-            <motion.div 
+            <motion.div
                 className="container-title-aboutUs"
                 variants={titleVariants}
             >
@@ -93,8 +93,18 @@ const AboutUs = () => {
                         <p><span><i className="bi bi-arrow-right-short"></i></span>Nuestra labor está guiada por tres pilares esenciales: confidencialidad, integridad y calidad del cuidado</p>
                     </motion.li>
                 </motion.ul>
+
+
+                <motion.div
+                    className="container-title-aboutUs"
+                    variants={titleVariants}
+                >
+                    <motion.h1 className='no-view' variants={titleVariants}>Qué hacemos</motion.h1>
+                </motion.div>
+
+
                 <motion.ul variants={rightColumnVariants}>
-                    
+
                     <motion.li variants={itemVariants}>
                         <p><span><i className="bi bi-arrow-right-short"></i></span>Brindar salud mental integral y desarrollo humano para individuos, familias y organizaciones, guiados por principios de compasion, conciencia y ética profesional.</p>
                     </motion.li>

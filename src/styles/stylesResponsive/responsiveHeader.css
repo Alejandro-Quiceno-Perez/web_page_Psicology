@@ -1,7 +1,7 @@
 /* --- PC Portatil --- */
 @media(max-width: 1444px) {
     .container-header {
-        height: 100%;
+        height: auto;
     }
 
     .header-content {

@@ -34,6 +34,10 @@
     border-radius: 2px;
 }
 
+.no-view {
+    display: none;
+}
+
 /* Sección: Quienes Somos */
 .quienes_somos {
     padding: 3rem 0;

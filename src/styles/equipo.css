@@ -1,7 +1,7 @@
 .container-equipo {
     background-color: var(--azul-polvo);
     width: 100%;
-    height: 100%;
+    height: auto;
     text-align: center;
 }
 
@@ -14,7 +14,7 @@
 .container-cards {
     /* background-color: aqua; */
     width: 70%;
-    height: 100%;
+    height: auto;
     margin: 0 auto;
     padding: 10rem 0;
     display: flex;

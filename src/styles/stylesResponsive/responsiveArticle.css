@@ -6,7 +6,7 @@
     .container-info {
         margin: 5rem auto;
         width: 90%;
-        height: 100%;
+        height: auto;
         gap: 5rem;
     }
 
@@ -64,15 +64,16 @@
     .container-about-me {
         /* background-color: antiquewhite; */
         width: 90%;
-        height: 100%;
-        margin: 1rem auto;
-        gap: 5rem;
-        padding: 0;
+        height: auto;
+        margin: 2rem auto;
+        gap: 2rem;
+        padding: 2rem 0;
+        overflow: hidden;
     }
 
     .about-me-img {
         width: 40%;
-        height: 100%;
+        height: auto;
     }
 
     .about-me-info {
@@ -151,7 +152,7 @@
     .card-services {
         /* background-color: rgba(255, 0, 0, 0.829); */
         width: 45% !important;
-        height: 100% !important;
+        height: auto !important;
         transition: none !important;
 
     }
@@ -165,15 +166,16 @@
     .container-about-me {
         /* background-color: aqua; */
         width: 90%;
-        height: 100%;
+        height: auto;
         flex-direction: column;
         gap: 1rem;
-        padding: 3rem 0rem;
+        padding: 2rem 0rem;
+        overflow: hidden;
     }
 
     .about-me-img {
         width: 50%;
-        height: 100%;
+        height: auto;
     }
 
     .about-me-info {
@@ -208,7 +210,7 @@
 
     .container-img {
         width: 70%;
-        height: 100%;
+        height: auto;
     }
 
     /* ! **SECTION SERVICES** !*/
@@ -219,10 +221,24 @@
     .card-services {
         /* background-color: rgba(255, 0, 0, 0.829); */
         width: 100% !important;
-        height: 100% !important;
+        height: auto !important;
     }
 
     /* ? **SECTION ABOUT ME** !*/
+
+    .container-about-me {
+        width: 95%;
+        height: auto;
+        gap: 1rem;
+        padding: 1rem 0;
+        overflow: hidden;
+        margin: 2rem auto;
+    }
+
+    .about-me-img {
+        width: 80%;
+        height: auto;
+    }
     
     .about-me-info {
         padding: 1rem;

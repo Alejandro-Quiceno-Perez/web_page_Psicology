@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 3rem;
     width: 100%;
 }
@@ -28,7 +28,7 @@
 .card-articulo {
     background: var(--blanco);
     width: 25%;
-    min-height: 480px;
+    height: 480px;
     /* 🔹 Establece un alto mínimo uniforme */
     display: flex;
     flex-direction: column;
@@ -156,7 +156,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
+    z-index: 2000;
     backdrop-filter: blur(4px);
     animation: fadeIn 0.3s ease;
 }
@@ -175,6 +175,7 @@
     flex-direction: row;
     gap: 2rem;
     animation: scaleIn 0.3s ease;
+    z-index: 2001;
 }
 
 /* Botón cerrar */
@@ -185,7 +186,6 @@
     font-size: 2.5rem;
     color: var(--azul-confianza);
     cursor: pointer;
-    background: var(--blanco);
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -193,6 +193,7 @@
     align-items: center;
     justify-content: center;
     transition: color 0.2s ease;
+    z-index: 2002;
 }
 
 .close-article:hover {
@@ -362,7 +363,7 @@
 
 /* === INTRODUCCIÓN === */
 .intro-seccion {
-    font-size: 1.8rem;
+    font-size: var(--font-size-medium-large);
     line-height: 1.8;
     color: var(--gris-carbon);
     width: 100%;
@@ -376,11 +377,6 @@
 }
 
 .libros-container {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem; */
-    
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 3rem;
@@ -396,9 +392,6 @@
     transition: transform 0.2s ease;
 }
 
-.card-libro:hover {
-    transform: scale(1.05);
-}
 
 .libro-img {
     width: 100%;
@@ -503,6 +496,7 @@
     font-size: var(--font-size-medium-large);
     color: var(--gris-carbon);
     line-height: 1.7;
+    text-align: justify;
     margin-bottom: 3rem;
     width: 100%;
 }
@@ -550,6 +544,7 @@
 }
 
 .item-musica .descripcion {
+    text-align: justify;
     font-size: 1.5rem;
     color: var(--gris-carbon);
     margin-bottom: 0.8rem;
@@ -577,7 +572,7 @@
 @media (max-width: 900px) {
     .modal-content-article {
         flex-direction: column;
-        width: 95%;
+        width: 90%;
         padding: 2rem;
     }
 
@@ -586,12 +581,12 @@
     }
 
     .modal-container-info h2 {
-        font-size: 2.2rem;
+        font-size: var(--font-size-large);
     }
 
     .descripcion-larga {
-        font-size: 1.5rem;
+        font-size: var(--font-size-medium);
     }
 }
 
-
+/* (Sin overrides adicionales; se mantiene el ajuste general a 900px) */

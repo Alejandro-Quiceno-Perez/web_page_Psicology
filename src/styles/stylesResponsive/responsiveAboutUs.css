@@ -24,9 +24,22 @@
         display: none;
     }
 
+    .no-view {
+        display: block;
+    }
+
+    .quienes_somos {
+        /* background-color: cornflowerblue; */
+        flex-direction: column;
+    }
+
+    .quienes_somos ul {
+        width: 100%;
+    }
+
     .container-title-aboutUs h1 {
-        background-color: turquoise;
-        width: 50%;
+        /* background-color: turquoise; */
+        width: 100%;
         font-size: var(--font-size-large);
     }
 

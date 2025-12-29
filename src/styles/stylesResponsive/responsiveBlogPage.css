@@ -1,0 +1,303 @@
+@media(max-width: 1440px) {
+
+    /* === RECOMENDACIONES LIBROS === */
+    .seccion-libros {
+        /* background-color: aqua; */
+        width: 90%;
+    }
+
+    .intro-seccion {
+        font-size: var(--font-size-medium);
+        line-height: 1.5;
+    }
+
+    @supports not (grid-auto-rows: masonry) {
+        .libros-container {
+            column-count: 5;
+        }
+    }
+
+    .card-libro h3 {
+        font-size: var(--font-size-medium);
+    }
+
+    .card-libro .autor {
+        font-size: var(--font-size-small);
+    }
+
+    .card-libro .descripcion {
+        font-size: var(--font-size-small);
+    }
+
+
+    /** SECCION MUSICA **/
+
+    .seccion-musica {
+        width: 90%;
+    }
+
+    /* ! Artículos Destacados */
+
+    .container-articulos {
+        width: 90%;
+    }
+
+    .card-articulo {
+        /* background-color: aqua; */
+        width: 25%;
+        height: 380px !important;
+
+    }
+
+    .card-info h3 {
+        font-size: var(--font-size-medium-large);
+        margin-bottom: 0;
+    }
+
+    .card-info p {
+        font-size: var(--font-size-medium);
+        margin-bottom: 0.8rem;
+    }
+
+    .btn-verMas-blog {
+        width: 50%;
+        margin: 2rem auto 1rem auto;
+        padding: 0.8rem 1.5rem;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        border: 1px solid var(--azul-confianza);
+        cursor: pointer;
+    }
+
+    .btn-verMas-blog span {
+        text-decoration: none;
+        color: var(--azul-confianza);
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .modal-content-article {
+
+        max-width: 1000px;
+        max-height: 75vh;
+    }
+
+    .descripcion-larga {
+        font-size: var( --font-size-medium);
+    }
+
+    .modal-container-info h2 {
+        font-size: var(--font-size-large);
+    }
+
+    /* Scroll personalizado */
+    .modal-container-info::-webkit-scrollbar {
+        width: 0px;
+    }
+
+}
+
+@media(max-width: 1024px) {
+
+    /* === RECOMENDACIONES LIBROS === */
+
+
+    @supports not (grid-auto-rows: masonry) {
+        .libros-container {
+            column-count: 3;
+        }
+    }
+
+    /* ! Artículos Destacados */
+
+    .container-articulos {
+        width: 90%;
+    }
+
+    .card-articulos {
+        /* background-color: yellow; */
+        margin: 3rem auto;
+    }
+
+    .card-articulo {
+        /* background-color: aqua; */
+        width: 45%;
+        height: 380px !important;
+
+    }
+
+    .btn-verMas-blog {
+        width: 50%;
+        margin: 1rem auto 1rem auto;
+        padding: 0.8rem 1.5rem;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        border: 1px solid var(--azul-confianza);
+        cursor: pointer;
+    }
+
+    .btn-verMas-blog span {
+        text-decoration: none;
+        color: var(--azul-confianza);
+        font-size: var(--font-size-medium) !important;
+        cursor: pointer;
+    }
+
+    .titulo-articulos {
+        font-size: var(--font-size-large);
+    }
+
+    .descripcion-larga {
+        font-family: var(--font-body);
+        font-size: var(--font-size-medium);
+        line-height: 1.4;
+    }
+
+    .modal-extra-info p {
+        font-size: var(--font-size-small);
+    }
+
+    .modal-container-info h2 {
+        font-size: var(--font-size-large);
+    }
+
+
+    /** SECCION MUSICA **/
+
+    .musica-layout {
+        /* background-color: lightgreen; */
+        gap: 1rem;
+    }
+
+    .container-musica-section {
+        /* background-color: lightcoral; */
+        width: 50%;
+    }
+
+    .lista-musica {
+        /* background-color: lightseagreen; */
+        width: 50%;
+    }
+
+    .titulo-musica {
+        font-size: var(--font-size-large);
+    }
+
+    .intro-musica {
+        font-size: var(--font-size-medium);
+    }
+
+    .item-musica h3 {
+        font-size: var(--font-size-medium-large);
+    }
+}
+
+
+@media(max-width: 768px) {
+
+    /* ! Artículos Destacados */
+
+    .container-articulos {
+        width: 90%;
+    }
+
+    .btn-verMas-blog {
+        width: 60%;
+        margin: 1rem auto 1rem auto;
+        padding: 0.8rem 1.5rem;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        border: 1px solid var(--azul-confianza);
+        cursor: pointer;
+    }
+
+    .btn-verMas-blog span {
+        text-decoration: none;
+        color: var(--azul-confianza);
+        font-size: var(--font-size-medium-large);
+        cursor: pointer;
+    }
+
+    .card-info h3 {
+        font-size: var(--font-size-medium);
+    }
+
+    .card-info p {
+        font-size: var(--font-size-small);
+    }
+}
+
+
+@media(max-width: 480px) {
+
+    /* === RECOMENDACIONES LIBROS === */
+    .titulo-seccion {
+        font-size: var(--font-size-large);
+    }
+
+    /* === INTRODUCCIÓN === */
+    .intro-seccion {
+        font-size: var(--font-size-medium);
+        line-height: 1.5;
+    }
+
+    @supports not (grid-auto-rows: masonry) {
+        .libros-container {
+            column-count: 2;
+            column-gap: 1.5rem;
+        }
+    }
+
+
+    /* - * SECCION MUSICA **/
+
+    .musica-layout {
+        /* background-color: lightgreen; */
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .container-musica-section {
+        /* background-color: lightcoral; */
+        width: 100%;
+    }
+
+    .lista-musica {
+        /* background-color: lightseagreen; */
+        width: 100%;
+        text-align: center;
+    }
+
+    .titulo-musica {
+        font-size: var(--font-size-large);
+    }
+
+    .intro-musica {
+        font-size: var(--font-size-medium);
+    }
+
+    .item-musica h3 {
+        font-size: var(--font-size-medium-large);
+    }
+
+
+    /* ?* ! Artículos Destacados */
+
+    .card-articulos {
+        /* background-color: lightgreen; */
+        flex-direction: column;
+    }
+
+    .card-articulo {
+        /* background-color: aqua; */
+        width: 80%;
+        height: 280px !important;
+    }
+
+    .card-img {
+        /* display: none; */
+    }
+}

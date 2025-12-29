@@ -28,6 +28,11 @@ body {
   min-height: 100vh;
 }
 
+/* Bloquea el scroll cuando un modal está abierto */
+body.modal-open {
+  overflow: hidden;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
