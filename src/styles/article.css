@@ -24,7 +24,7 @@
 
 .container-title h1 span {
     font-weight: 700;
-    color: var(--azul-confianza);
+    color: var(--azul-polvo);
 }
 
 .container-title p {
@@ -40,22 +40,23 @@
 }
 
 .btn-verMas {
+    background-color: var(--gris-carbon);
     padding: 1rem 2rem;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border: 1px solid var(--azul-confianza);
+    border: 1px solid var(--gris-carbon);
     text-decoration: none;
 }
 
 .btn-verMas span {
     font-family: var(--font-title);
-    color: var(--azul-confianza);
+    color: var(--blanco);
     font-size: 2rem;
 }
 
 .btn-verMas:hover {
-    box-shadow: 0 0 10px var(--azul-confianza);
+    box-shadow: 0 0 10px var(--gris-carbon);
     transform: scale(1.1);
 }
 
@@ -72,19 +73,36 @@
 
 .container-img img {
     object-fit: cover;
-    /* border-radius: 5%; */
+    border-radius: 50%;
     width: 100%;
     height: 100%;
+    box-shadow: 0 0 15px var(--negro);
 }
 
 
 /* ! Section Services */
 
 .container-services {
+    position: relative;
+    overflow: hidden;
+    
     width: 100%;
     height: auto;
     padding: 6rem 0;
-    background-color: var(--azul-polvo);
+}
+
+.container-services::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background-color: var(--azul-polvo); */
+    background-image:url("/public/img/fondo/fondo1.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+
+    transform: scale(1.05); /* evita bordes blancos por el blur */
+    z-index: -1;
 }
 
 .container-info-services {
@@ -92,13 +110,14 @@
     width: 70%;
     height: auto;
     margin: 0 auto;
+    z-index: 1;
     /* padding: 3rem 0; */
 }
 
 .container-info-services h2 {
     font-family: var(--font-title);
     font-size: 4rem;
-    color: var(--gris-carbon);
+    color: var(--blanco);
     text-align: center;
     /* padding-top: 3rem ; */
 }
@@ -106,7 +125,7 @@
 .container-info-services p {
     font-family: var(--font-body);
     font-size: 2rem;
-    color: var(--gris-carbon);
+    color: var(--blanco);
     text-align: center;
     padding-bottom: 3rem;
 }
@@ -140,7 +159,7 @@
 
 .about-me-img img {
     object-fit: cover;
-    border-radius: 50% ;
+    border-radius: 50%;
     width: 100%;
     height: 100%;
 }
@@ -150,17 +169,17 @@
     width: 80%;
 }
 
-.about-me-info h2 {
+/* .about-me-info h2 {
     font-family: var(--font-title);
     font-size: 3rem;
     margin-bottom: 1.5rem;
     color: var(--gris-carbon);
-}
+} */
 
 .about-me-info p {
     font-family: var(--font-body);
     font-size: var(--font-size-large);
-    color: var(--azul-confianza);
+    color: var(--gris-carbon);
 }
 
 .btn-about-me {

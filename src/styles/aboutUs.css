@@ -30,7 +30,7 @@
     left: 0;
     width: 60px;
     height: 4px;
-    background-color: var(--azul-confianza);
+    background-color: var(--azul-polvo);
     border-radius: 2px;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .quienes_somos span {
-    color: var(--azul-confianza);
+    color: var(--gris-carbon);
     font-weight: bold;
     font-size: var(--font-size-medium);
     margin-right: 1rem;

@@ -7,6 +7,7 @@ import AboutMe from '../utils/AboutMe';
 import Equipo from '../utils/Equipo';
 import AboutUs from '../utils/AboutUs';
 import Testimonios from './Testimonios';
+import FormularioAgendarCita from '../utils/FormularioAgendarCita';
 
 const Article = () => {
     return (
@@ -17,11 +18,12 @@ const Article = () => {
             </section>
             <section className='nosotros' id="nosotros">
                 <AboutMe />
+                <AboutUs />
             </section>
-            <section id="equipo">
+            {/* <section id="equipo">
                 <Equipo />
-            </section>
-            <AboutUs />
+                <FormularioAgendarCita />
+            </section> */}
         </div>
     )
 }

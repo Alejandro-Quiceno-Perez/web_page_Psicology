@@ -64,7 +64,7 @@ const AboutMe = () => {
                 variants={imageVariants}
                 style={{ willChange: "transform, opacity" }}
             >
-                <img src="./img/person3.jpg" alt="Sobre mí" />
+                <img src="./img/letraCrisHenao.png" alt="Sobre mí" />
             </motion.div>
 
             <motion.div 
@@ -72,7 +72,7 @@ const AboutMe = () => {
                 variants={contentVariants}
                 style={{ willChange: "transform, opacity" }}
             >
-                <motion.h2 variants={textVariants}>Cristina Henao</motion.h2>
+                {/* <motion.h2 variants={textVariants}>Cristina Henao</motion.h2> */}
                 <motion.p variants={textVariants}>Soy Cristina, psicóloga clínica y fundadora de Zentai, con más de cinco años de experiencia. Mi trayectoria incluye dos años en una funeraria, donde adquirí amplia experiencia en el acompañamiento en duelo. También he trabajado con niños y disfruto guiando a jóvenes y adultos en sus procesos psicológicos.
                     <br />
                     Ofrezco sesiones presenciales en Medellín y virtuales para cualquier lugar del mundo, enfocadas en acompañarte a sanar, construir bienestar y reconectar contigo</motion.p>

@@ -17,12 +17,12 @@
     font-family: var(--font-title);
     font-size: 3rem;
     font-weight: bold;
-    color: var(--gris-carbon);
+    color: var(--blanco);
     margin-bottom: 1rem;
 }
 
 .footer p {
-    color: var(--negro);
+    color: var(--blanco);
     font-size: var(--font-size-medium-large);
     margin-bottom: 2rem;
     line-height: 1.5;
@@ -48,7 +48,7 @@
 }
 
 .footer-item p {
-    color: var(--negro);
+    color: var(--blanco);
     font-size: var(--font-size-medium-large);
 }
 
@@ -57,7 +57,7 @@
 }
 
 .footer-item i {
-    color: var(--gris-carbon);
+    color: #25D366;
     font-size: 2rem;
 }
 
@@ -66,7 +66,7 @@
 .footer-divider {
     width: 80%;
     height: 1px;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.685);
     margin: 0 auto;
 }
 

@@ -28,7 +28,7 @@ const LogoImage = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
             >
-                METANOIA
+                CRISTINA HENAO
             </motion.h1>
         </motion.div>
     )

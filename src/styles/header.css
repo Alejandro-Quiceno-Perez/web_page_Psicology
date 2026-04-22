@@ -36,10 +36,11 @@
 }
 
 .title-logo {
-    font-family: "Lora", serif;
+    /* font-family: "Lora", serif; */
     font-size: 4rem;
-    font-weight: bold;
-    color: var(--gris-carbon);
+    font-weight: 200;
+    color: var(--blanco);
+    font-style: italic;
 
 }
 
@@ -71,13 +72,13 @@
     text-decoration: none;
     font-size: 2rem;
     text-transform: uppercase;
-    color: var(--azul-confianza);
+    color: var(--blanco);
     transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
 }
 
 .container-nav ul li a:hover {
-    color: var(--gris-carbon);
-    text-shadow: 0 0 1px var(--azul-confianza);
+    color: #ffffffaf;
+    /* text-shadow: 0 0 1px var(--azul-confianza); */
 } 
 
 

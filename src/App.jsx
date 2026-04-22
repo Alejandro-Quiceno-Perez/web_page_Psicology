@@ -38,14 +38,14 @@ function App() {
   if (loading) return <SplashScreen />;
  
   const mainNavItems = [
-    { label: 'Home', href: '/' },
+    { label: 'Inicio', href: '/' },
     { label: 'Servicios', href: '#servicios' },
     { label: 'Nosotros', href: '#nosotros' },
     { label: 'Contacto', href: '#contacto' },
   ];
 
   const blogNavItems = [
-    { label: 'Home', href: '/' },
+    { label: 'Inicio', href: '/' },
     { label: 'Contacto', href: '#contacto' },
   ];
 

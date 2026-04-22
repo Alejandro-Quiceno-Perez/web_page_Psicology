@@ -63,7 +63,7 @@ const WelcomeBanner = () => {
             className='container-info'>
             <motion.section className="container-title" variants={itemVariant}>
                 <motion.h1 variants={itemVariant}>
-                    Te acompañamos en tu camino hacia el{' '}
+                    <i>Terapia Online y presencial</i>{' '}
                     <motion.span
                         variants={spanVariant}
                         className="highlight-text"
@@ -71,16 +71,16 @@ const WelcomeBanner = () => {
                         BIENESTAR EMOCIONAL
                     </motion.span>
                 </motion.h1>
-                <motion.p variants={itemVariant}>
+                {/* <motion.p variants={itemVariant}>
                     Un espacio seguro y cálido donde encontrarás el apoyo profesional que necesitas. Juntos construiremos herramientas para tu crecimiento personal y emocional.
-                </motion.p>
+                </motion.p> */}
                 <motion.div
                     className="btn-info-container"
                     variants={itemVariant}
                 >
                     <BtnContact />
                     <a href="/blogPage" className="btn-verMas">
-                        <span >Conocer más </span>
+                        <span >Conocer más! </span>
                     </a>
                 </motion.div>
             </motion.section>
@@ -91,7 +91,7 @@ const WelcomeBanner = () => {
                 <motion.div
                     className="container__img"
                 >
-                    <img src="/img/Logo_sinFondo_cafe1png.png" alt="Imagen de fondo lugar" />
+                    <img src="/img/FotoCris.png" alt="Imagen de fondo lugar" />
                 </motion.div>
             </motion.section>
         </motion.div>
