@@ -20,10 +20,10 @@ const Article = () => {
                 <AboutMe />
                 <AboutUs />
             </section>
-            {/* <section id="equipo">
-                <Equipo />
+            <section id="equipo">
+                {/* <Equipo /> */}
                 <FormularioAgendarCita />
-            </section> */}
+            </section>
         </div>
     )
 }

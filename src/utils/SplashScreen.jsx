@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../styles/SplashScreen.css'
-import logo from '../../public/img/Logo_sinFondo.png'
+import logo from '../../public/img/letraCrisHenao.png'
 
 const SplashScreen = () => {
 
