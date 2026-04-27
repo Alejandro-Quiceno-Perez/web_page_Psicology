@@ -30,15 +30,14 @@ const FormularioAgendarCita = () => {
     try {
       const response = await fetch("https://script.google.com/macros/s/AKfycbzfD2cmnXnrx5KgtbtasBTzi5C1u8K-cRMCNsPh-ll--XEq6TRFLK47ybDSyPdaS9Wy/exec", {
         method: "POST",
+        mode: "no-cors",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "text/plain;charset=utf-8"
         },
         body: JSON.stringify(formData)
       })
 
-      const result = await response.json();
-
-      if(result.success) {
+      if (response) {
         setMessage("Cita agendada exitosamente.");
         setFormData({
           nombre: "",
@@ -53,8 +52,9 @@ const FormularioAgendarCita = () => {
       }
     } catch (error) {
       setMessage("Error al agendar la cita. Por favor, inténtalo de nuevo.");
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
   }
 
   return (
@@ -84,6 +84,7 @@ const FormularioAgendarCita = () => {
             {loading ? "Enviando..." : "Agendar Cita"}
           </button>
         </form>
+        {message ? <p aria-live="polite">{message}</p> : null}
       </div>
     </div>
   )
