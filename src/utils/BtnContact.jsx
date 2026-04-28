@@ -4,7 +4,7 @@ import '../styles/btnContact.css'; // Asegúrate de crear este archivo CSS para 
 const BtnContact = () => {
     return (
         <div className='btn-contact'>
-            <a href="http://wa.me/573043317903?text=Hola!%20Deseo%20más%20información..." className="">Habla con Nosotros <i className="bi bi-whatsapp"></i></a>
+            <a href="http://wa.me/573043317903?text=Hola!%20Deseo%20más%20información..." className="">Agenda tu primera sesión <i className="bi bi-whatsapp"></i></a>
         </div>
     )
 }

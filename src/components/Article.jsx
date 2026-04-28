@@ -7,7 +7,7 @@ import AboutMe from '../utils/AboutMe';
 import Equipo from '../utils/Equipo';
 import AboutUs from '../utils/AboutUs';
 import Testimonios from './Testimonios';
-import FormularioAgendarCita from '../utils/FormularioAgendarCita';
+import FormularioAgendarCita from '../utils/Banner';
 
 const Article = () => {
     return (
@@ -22,7 +22,7 @@ const Article = () => {
             </section>
             <section id="equipo">
                 {/* <Equipo /> */}
-                <FormularioAgendarCita />
+                {/* <FormularioAgendarCita /> */}
             </section>
         </div>
     )
