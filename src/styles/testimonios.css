@@ -1,23 +1,24 @@
 /* Estilos para la sección de testimonios */
 
 .testimonios-section {
-  background: linear-gradient(135deg, #e0e7ff 0%, #f7fafc 100%);
+  /* background: linear-gradient(135deg, #e0e7ff 0%, #f7fafc 100%); */
+  background-color: var(--azul-polvo);
   padding: 4rem 1rem 5rem 1rem;
   text-align: center;
   position: relative;
 }
 
 .testimonios-section h2 {
-  font-size: 4rem;
-  color: var(--gris-carbon);
-  text-align: center;
-  margin-bottom: 2.5rem;
-  font-weight: 800;
-  letter-spacing: 1px;
+  font-family: var(--font-title);
+    font-size: 4rem;
+    color: var(--blanco);
+    text-align: center;
 }
 
 
 .testimonios-cards {
+  width: 70%;
+  margin: 4rem auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -29,7 +30,7 @@
 .testimonio-card {
   background: #fff;
   border-radius: 2rem 2rem 2rem 0.5rem;
-  box-shadow: 0 4px 24px rgba(58,124,165,0.10);
+  box-shadow: 0 0px 24px rgb(0, 0, 0);
   padding: 2.2rem 2rem 1.7rem 2rem;
   max-width: 420px;
   min-width: 280px;
@@ -38,38 +39,37 @@
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  border-left: 8px solid #3A7CA5;
+  border-left: 8px solid var(--gris-carbon);
   margin-bottom: 2.2rem;
   cursor: default;
 }
 
 .testimonio-avatar {
-  width: 64px;
-  height: 64px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background: #3A7CA5;
+  background: var(--gris-carbon);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1.1rem;
   margin-left: -1.7rem;
-  box-shadow: 0 2px 8px #b6c6e6;
+  box-shadow: 0 0px 8px #000000;
   border: 3px solid #fff;
   letter-spacing: 1px;
   position: absolute;
-  top: -32px;
+  top: -12px;
   left: 0;
 }
 
 .testimonio-text {
-  font-size: 1.25rem;
-  color: #2b436a;
+  font-size: var(--font-size-medium);
+  color: var(--gris-carbon);
   margin-bottom: 1.3rem;
   font-style: italic;
-  line-height: 1.7;
   text-align: left;
   padding-left: 2.5rem;
   padding-right: 1rem;
@@ -85,12 +85,12 @@
 
 .testimonio-nombre {
   font-weight: bold;
-  color: #3A7CA5;
+  color: var(--azul-polvo);
   font-size: 1.18rem;
   margin-bottom: 0.1rem;
 }
 
 .testimonio-fecha {
   font-size: 1.05rem;
-  color: #6b7280;
+  color: var(--gris-carbon);
 }

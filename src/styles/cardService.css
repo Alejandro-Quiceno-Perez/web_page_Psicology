@@ -17,6 +17,7 @@
     width: 35rem;
     height: 35rem;
     will-change: transform, opacity;
+    transition: .3s ;
 }
 
 .card-services h2 {
@@ -55,5 +56,5 @@
 
 
 .card-services:hover {
-    box-shadow: 0px 10px 20px var(--gris-carbon);
+    box-shadow: 0px 0px 10px var(--blanco);
 }

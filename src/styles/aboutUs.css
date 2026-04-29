@@ -72,3 +72,6 @@
     color: var(--negro);
 }
 
+.btn-about-me {
+    width: 40%;
+}

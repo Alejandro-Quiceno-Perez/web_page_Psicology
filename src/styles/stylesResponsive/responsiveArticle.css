@@ -246,6 +246,7 @@
     }
 
     .btn-about-me {
-        width: 100%;
+        background-color: aqua;
+        width: 100% !important;
     }
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import './blogpage.css'
+import './blogPage.css'
 import '../../styles/stylesResponsive/responsiveBlogPage.css'
 
 import ArticulosDestacados from './ArticulosDestacados'

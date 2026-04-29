@@ -1,0 +1,58 @@
+.container-section {
+    width: 70%;
+    margin: 4rem auto;
+}
+
+.PreguntasFrecuentes-section{
+    text-align: center;
+}
+
+.PreguntasFrecuentes-section h2 {
+    font-family: var(--font-title);
+    font-size: 4rem;
+    color: var(--azul-polvo);
+    text-align: center;
+}
+
+.PreguntasFrecuentes-section p {
+    font-family: var(--font-body);
+    font-size: 2rem;
+    color: var(--blanco);
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+/* Personalización visual del accordion de Bootstrap */
+
+.accordion-item {
+    border: none;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.accordion-button {
+    background: var(--blanco);
+    color: var(--gris-carbon);
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 2rem;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background: var(--azul-polvo);
+    color: var(--blanco);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    color: var(--gris-carbon);
+    padding: 2rem;
+}

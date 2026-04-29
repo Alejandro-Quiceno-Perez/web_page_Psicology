@@ -8,6 +8,8 @@ import Equipo from '../utils/Equipo';
 import AboutUs from '../utils/AboutUs';
 import Testimonios from './Testimonios';
 import FormularioAgendarCita from '../utils/Banner';
+import PreguntasFrecuentes from '../utils/PreguntasFrecuentes';
+import AtencionIntegral from './AtencionIntegral';
 
 const Article = () => {
     return (
@@ -21,8 +23,9 @@ const Article = () => {
                 <AboutUs />
             </section>
             <section id="equipo">
-                {/* <Equipo /> */}
-                {/* <FormularioAgendarCita /> */}
+                <Testimonios />
+                <PreguntasFrecuentes />
+                <AtencionIntegral />
             </section>
         </div>
     )

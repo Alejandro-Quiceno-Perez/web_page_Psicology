@@ -7,17 +7,32 @@ const testimoniosData = [
   {
     nombre: 'María López',
     texto: 'La atención fue excelente, me sentí escuchada y comprendida desde el primer momento. Recomiendo totalmente este consultorio.',
-    fecha: 'Julio 2025',
+    fecha: 'Febrero 2025',
   },
   {
     nombre: 'Carlos Ramírez',
     texto: 'Gracias a las sesiones, logré superar una etapa difícil. El profesionalismo y la empatía son inmejorables.',
-    fecha: 'Junio 2025',
+    fecha: 'Abril 2025',
   },
   {
-    nombre: 'Ana Torres',
+    nombre: 'Ana Cortes',
     texto: 'Me ayudaron a encontrar herramientas para manejar mi ansiedad. Muy agradecida por el acompañamiento.',
-    fecha: 'Mayo 2025',
+    fecha: 'Abril 2025',
+  },
+  {
+    nombre: 'Maria González',
+    texto: 'Encontré un espacio seguro donde pude sanar emocionalmente y comprender muchas cosas de mi vida',
+    fecha: 'Marzo 2026',
+  },
+  {
+    nombre: 'Carlos Perez',
+    texto: 'La atención fue cercana, humana y muy profesional desde la primera sesión.',
+    fecha: 'Abril 2026',
+  },
+  {
+    nombre: 'Angiela Torres',
+    texto: 'Las terapias me ayudaron a recuperar mi tranquilidad y mejorar mi relación conmigo misma.',
+    fecha: 'Mayo 2026',
   },
 ];
 
