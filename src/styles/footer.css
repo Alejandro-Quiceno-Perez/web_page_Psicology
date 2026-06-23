@@ -56,7 +56,7 @@
 }
 
 .footer-item i {
-    color: #25D366;
+    color: var(--negro);
     font-size: 2rem;
 }
 

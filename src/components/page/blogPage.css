@@ -73,11 +73,13 @@
     font-family: var(--font-title);
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    color: var(--azul-polvo);
 }
 
 .card-info p {
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    color: var(--negro);
 }
 
 .btn-verMas-blog {
@@ -87,19 +89,19 @@
     border-radius: 10px;
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border: 1px solid var(--azul-confianza);
+    border: 1px solid var(--azul-polvo);
     cursor: pointer;
 }
 
 .btn-verMas-blog span {
     text-decoration: none;
-    color: var(--azul-confianza);
+    color: var(--azul-polvo);
     font-size: 2rem;
     cursor: pointer;
 }
 
 .btn-verMas-blog:hover {
-    box-shadow: 0 0 10px var(--azul-confianza);
+    box-shadow: 0 0 10px var(--azul-polvo);
     transform: scale(1.1);
 }
 
@@ -124,18 +126,18 @@
     font-size: 1.4rem;
     border-radius: 8px;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-    color: var(--gris-carbon);
+    color: var(--negro);
 }
 
 .pagination button:hover {
     background-color: var(--azul-claro);
-    color: var(--azul-confianza);
+    color: var(--azul-polvo);
 }
 
 .pagination button.active {
-    background-color: var(--azul-confianza);
+    background-color: var(--azul-polvo);
     color: var(--blanco);
-    border-color: var(--azul-confianza);
+    border-color: var(--azul-polvo);
 }
 
 .pagination button:disabled {
@@ -184,7 +186,7 @@
     top: 1rem;
     right: 1rem;
     font-size: 2.5rem;
-    color: var(--azul-confianza);
+    color: var(--azul-polvo);
     cursor: pointer;
     border-radius: 50%;
     width: 40px;
@@ -230,7 +232,7 @@
 }
 
 .modal-img-info span {
-    background: var(--azul-confianza);
+    background: var(--azul-polvo);
     color: var(--blanco);
     padding: 0.4rem 0.8rem;
     border-radius: 0.5rem;
@@ -254,7 +256,7 @@
 .modal-container-info h2 {
     font-family: var(--font-title);
     font-size: 2.6rem;
-    color: var(--azul-confianza);
+    color: var(--azul-polvo);
     margin-bottom: 1.2rem;
 }
 
@@ -263,7 +265,7 @@
     font-family: var(--font-body);
     font-size: 1.7rem;
     line-height: 1.6;
-    border-left: 4px solid var(--azul-confianza);
+    border-left: 4px solid var(--azul-polvo);
     padding-left: 1rem;
     margin-bottom: 1.5rem;
 }
@@ -275,7 +277,7 @@
 }
 
 .modal-extra-info a {
-    color: var(--azul-confianza);
+    color: var(--azul-polvo);
     text-decoration: none;
 }
 
@@ -293,7 +295,7 @@
 
 .tag {
     background: var(--gris-claro);
-    color: var(--azul-confianza);
+    color: var(--azul-polvo);
     /* padding: 0.4rem 1rem; */
     border-radius: 1rem;
     font-size: 1.3rem;
@@ -373,7 +375,7 @@
 }
 
 .intro-seccion strong {
-    color: var(--azul-confianza);
+    color: var(--azul-polvo);
 }
 
 .libros-container {
@@ -421,7 +423,7 @@
 .card-libro h3 {
     font-family: var(--font-title);
     font-size: 1.8rem;
-    color: var(--azul-confianza);
+    color: var(--azul-polvo);
 }
 
 .card-libro .autor {
@@ -532,7 +534,7 @@
 .item-musica h3 {
     font-size: 2rem;
     font-weight: 600;
-    color: var(--azul-confianza);
+    color: var(--azul-polvo);
     margin-bottom: 0.4rem;
 }
 
