@@ -4,7 +4,7 @@ import '../styles/btn-whatsapp.css'
 const BtnWhatspp = () => {
     return (
         <div className='btn-whatsapp'>
-            <a href="http://wa.me/573043317903?text=Hola!%20Deseo%20más%20información...">
+            <a href="http://wa.me/573043317903?text=Hola!%20Deseo%20más%20información%20sobre%20los%20servicios...">
                 <i className="bi bi-whatsapp"></i>
             </a>
         </div>

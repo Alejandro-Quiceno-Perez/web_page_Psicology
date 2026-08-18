@@ -185,5 +185,5 @@
 .btn-about-me {
     /* background-color: yellow; */
     margin-top: 2rem;
-    width: 35%;
+    width: 50% !important;
 }
